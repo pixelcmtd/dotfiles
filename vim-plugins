@@ -1,6 +1,6 @@
 #!/bin/sh
 cd ~/.vim/pack/git-plugins/start
 
-for p in dense-analysis/ale editorconfig/editorconfig-vim tweekmonster/gofmt.vim itchyny/lightline.vim rust-lang/rust.vim wlemuel/vim-tldr rhysd/vim-clang-format itchyny/vim-cursorword ; do
+for p in dense-analysis/ale editorconfig/editorconfig-vim tweekmonster/gofmt.vim itchyny/lightline.vim rust-lang/rust.vim wlemuel/vim-tldr rhysd/vim-clang-format itchyny/vim-cursorword neoclide/coc.nvim jreybert/vimagit ; do
         git clone --recurse-submodules --verbose https://github.com/$p.git
 done
