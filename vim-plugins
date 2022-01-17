@@ -1,6 +1,39 @@
 #!/bin/sh
+set -uxe
+
+mkdir -p ~/.vim/pack/git-plugins/start
 cd ~/.vim/pack/git-plugins/start
 
-for p in dense-analysis/ale editorconfig/editorconfig-vim tweekmonster/gofmt.vim itchyny/lightline.vim rust-lang/rust.vim wlemuel/vim-tldr rhysd/vim-clang-format itchyny/vim-cursorword neoclide/coc.nvim jreybert/vimagit ; do
-        git clone --recurse-submodules --verbose https://github.com/$p.git
+for p in \
+        dense-analysis/ale \
+        prabirshrestha/async.vim \
+        skywind3000/asyncrun.vim \
+        neoclide/coc.nvim \
+        vim-denops/denops.vim \
+        lambdalisue/askpass.vim \
+        skanehira/denops-docker.vim \
+        lambdalisue/guise.vim \
+        editorconfig/editorconfig-vim \
+        itchyny/lightline.vim \
+        iamcco/markdown-preview.nvim \
+        sbdchd/neoformat \
+        preservim/nerdtree \
+        wlemuel/vim-tldr \
+        itchyny/vim-cursorword \
+        tpope/vim-fugitive \
+        sirtaj/vim-openscad \
+        tpope/vim-rhubarb \
+        junegunn/vim-github-dashboard \
+        jaxbot/github-issues.vim \
+        vim-utils/vim-man \
+        nvim-lua/plenary.nvim \
+        segeljakt/vim-silicon \
+        nvim-telescope/telescope.nvim
+https://github.com/pest-parser/pest.vim.git
+do
+        [ -d $(echo $p | cut -d/ -f2) ] || \
+                git clone --recurse-submodules --verbose https://github.com/$p.git
 done
+
+cd coc.nvim
+yarn install
