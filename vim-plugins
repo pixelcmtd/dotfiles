@@ -26,10 +26,10 @@ for p in \
         junegunn/vim-github-dashboard \
         jaxbot/github-issues.vim \
         vim-utils/vim-man \
+        pest-parser/pest.vim \
         nvim-lua/plenary.nvim \
         segeljakt/vim-silicon \
         nvim-telescope/telescope.nvim
-https://github.com/pest-parser/pest.vim.git
 do
         [ -d $(echo $p | cut -d/ -f2) ] || \
                 git clone --recurse-submodules --verbose https://github.com/$p.git
