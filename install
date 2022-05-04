@@ -5,5 +5,11 @@ set -uxe
 cd ~/dotfiles
 
 for x in $@ ; do
-        ./$x
+        if [ -d $x ] ; then
+                cd $x
+                ./run
+                cd ..
+        else
+                ./$x
+        fi
 done

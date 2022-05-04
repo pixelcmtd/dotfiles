@@ -1,0 +1,14 @@
+#!/bin/sh
+set -uxe
+
+mkdir -p ~/.bin ~/.local/bin
+
+sudo pacman -Syu yay
+yay -S `cat packages`
+
+sudo systemctl enable --now dropbear
+
+cp -f env ~/.env
+cd ..
+./vim
+./zsh
