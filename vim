@@ -35,6 +35,7 @@ for p in \
         pest-parser/pest.vim \
         nvim-lua/plenary.nvim \
         segeljakt/vim-silicon \
+        slim-template/vim-slim \
         nvim-telescope/telescope.nvim
 do
         [ -d $(echo $p | cut -d/ -f2) ] || \
