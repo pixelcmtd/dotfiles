@@ -4,12 +4,4 @@ set -uxe
 [ -d ~/dotfiles ] || git clone https://github.com/pixelcmtd/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
-for x in $@ ; do
-        if [ -d $x ] ; then
-                cd $x
-                ./run
-                cd ..
-        else
-                ./$x
-        fi
-done
+./run $@
