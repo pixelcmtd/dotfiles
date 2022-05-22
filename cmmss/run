@@ -1,0 +1,31 @@
+#!/bin/sh
+set -ue
+
+read -p 'To improve your experience, we will agree to some Apple SLAs for you.
+To agree, press enter. To disagree, press ctrl-c.' quark2
+
+xcode-select --install && \
+read -p 'A window that lets you install XCode CLI tools should have opened.
+If you'\''ve closed it, run `xcode-select --install` to reopen it.
+Please install the XCode CLI tools and then press enter.' quark1 || true
+
+[ `arch` = arm64 ] && {
+        echo "Detected an ARM CPU, installing Rosetta..."
+        echo A | sudo softwareupdate --install-rosetta
+}
+
+set -x
+
+export PATH="$PATH:/opt/local/bin:/opt/homebrew/bin:/usr/local/bin"
+
+command -v brew >/dev/null || netsh -f install.sh gh://Homebrew/install
+brew analytics off
+
+brew install $(cat packages.brew)
+rustup toolchain install nightly
+mas install $(cat packages.mas)
+pip3 install --user $(cat packages.pip3)
+cargo install $(cat packages.cargo)
+
+cd ..
+./run vim zsh editorconfig

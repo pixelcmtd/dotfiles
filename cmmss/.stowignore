@@ -1,0 +1,10 @@
+.DS_Store
+Compose.yaml
+compile_compose.sh
+meditate.25.png
+packages.brew
+packages.cargo
+packages.mas
+packages.pip3
+run
+sync.sh
