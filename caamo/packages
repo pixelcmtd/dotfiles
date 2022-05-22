@@ -1,7 +1,6 @@
-1password
-smb4k
-apple-fonts
 patch
+1password
+apple-fonts
 arduino
 atop
 autoconf
@@ -75,6 +74,8 @@ qrencode
 ruby
 rust
 signal-desktop
+smb4k
+stow
 tetrio-desktop
 texlive-core
 thunderbird

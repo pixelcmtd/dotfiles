@@ -10,5 +10,4 @@ sudo systemctl enable --now dropbear
 
 cp -f env ~/.env
 cd ..
-./vim
-./zsh
+./run vim zsh editorconfig
