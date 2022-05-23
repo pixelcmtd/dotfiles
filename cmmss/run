@@ -18,7 +18,7 @@ set -x
 
 export PATH="$PATH:/opt/local/bin:/opt/homebrew/bin:/usr/local/bin"
 
-command -v brew >/dev/null || netsh -f install.sh gh://Homebrew/install
+curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | sh
 brew analytics off
 
 brew install $(cat packages.brew)
