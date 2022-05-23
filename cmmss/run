@@ -18,7 +18,7 @@ set -x
 
 export PATH="$PATH:/opt/local/bin:/opt/homebrew/bin:/usr/local/bin"
 
-curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | sh
+curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 brew analytics off
 
 brew install $(cat packages.brew)
