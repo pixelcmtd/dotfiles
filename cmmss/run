@@ -27,5 +27,7 @@ mas install $(cat packages.mas)
 pip3 install --user $(cat packages.pip3)
 cargo install $(cat packages.cargo)
 
+./compile_compose.sh
+
 cd ..
 ./run vim zsh editorconfig
