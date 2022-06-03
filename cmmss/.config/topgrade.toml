@@ -22,5 +22,4 @@ repos = [
 pull_predefined = false
 
 [commands]
-"gpncl" = "~/gpncl_copy.sh"
 "Vogelbuch" = "cd ~/vogelbuch && ./get_current_tweets.sh"
