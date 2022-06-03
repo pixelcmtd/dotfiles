@@ -220,6 +220,9 @@ alias diff='git diff --no-index'
 alias rr='curl -sL http://bit.ly/10hA8iC | bash'
 alias tmp='pushd ; cd $(mktemp -d)'
 
+alias npm=pnpm
+alias npx=pnpx
+
 ght() (git tag $@ && git push origin --tags)
 glcp() (git pull && git commit $@ && git push)
 ghcl() (git clone --recurse-submodules -v https://github.com/$1.git $2 $3 $4)
