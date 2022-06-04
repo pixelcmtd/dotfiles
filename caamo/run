@@ -8,6 +8,5 @@ yay -S `cat packages`
 
 sudo systemctl enable --now dropbear
 
-cp -f env ~/.env
 cd ..
 ./run vim zsh editorconfig
