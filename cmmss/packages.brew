@@ -229,6 +229,7 @@ mcjack123/homebrew-craftospc/craftos-pc
 homebrew/cask/discord
 homebrew/cask/docker
 homebrew/cask/eclipse-java
+homebrew/cask/element
 homebrew/cask/emacs
 homebrew/cask/emojipedia
 homebrew/cask/epic-games
@@ -241,11 +242,14 @@ homebrew/cask/graphiql
 homebrew/cask/iina
 homebrew/cask/inkscape
 homebrew/cask/macfuse
+homebrew/cask/macs-fan-control
 homebrew/cask/monitorcontrol
 homebrew/cask/musescore
+homebrew/cask/native-access
 homebrew/cask/nextcloud
 homebrew/cask/obs
 homebrew/cask/openscad
+homebrew/cask/parallels
 homebrew/cask/penc
 homebrew/cask/raspberry-pi-imager
 homebrew/cask/scout
@@ -257,6 +261,7 @@ homebrew/cask/tetrio
 homebrew/cask/thunderbird
 homebrew/cask/tor-browser
 homebrew/cask/utm
+homebrew/cask/vimr
 homebrew/cask/vlc
 homebrew/cask/vscodium
 homebrew/cask/waterfox
