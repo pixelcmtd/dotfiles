@@ -118,4 +118,6 @@ map <Leader>bp :bprevious<CR><C-L>
 ":winc l<CR>
 map <Leader>n :NERDTree<CR><C-L>
 
+colorscheme pitch_black
+
 " TODO: shortcut zum anmachen von markdown editing ohne makefile

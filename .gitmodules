@@ -1,0 +1,78 @@
+[submodule "vim/.vim/pack/git-plugins/start/ale"]
+	path = vim/.vim/pack/git-plugins/start/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "vim/.vim/pack/git-plugins/start/async.vim"]
+	path = vim/.vim/pack/git-plugins/start/async.vim
+	url = https://github.com/prabirshrestha/async.vim.git
+[submodule "vim/.vim/pack/git-plugins/start/asyncrun.vim"]
+	path = vim/.vim/pack/git-plugins/start/asyncrun.vim
+	url = https://github.com/skywind3000/asyncrun.vim.git
+[submodule "vim/.vim/pack/git-plugins/start/coc.nvim"]
+	path = vim/.vim/pack/git-plugins/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "vim/.vim/pack/git-plugins/start/denops.vim"]
+	path = vim/.vim/pack/git-plugins/start/denops.vim
+	url = https://github.com/vim-denops/denops.vim.git
+[submodule "vim/.vim/pack/git-plugins/start/askpass.vim"]
+	path = vim/.vim/pack/git-plugins/start/askpass.vim
+	url = https://github.com/lambdalisue/askpass.vim.git
+[submodule "vim/.vim/pack/git-plugins/start/denops-docker.vim"]
+	path = vim/.vim/pack/git-plugins/start/denops-docker.vim
+	url = https://github.com/skanehira/denops-docker.vim.git
+[submodule "vim/.vim/pack/git-plugins/start/guise.vim"]
+	path = vim/.vim/pack/git-plugins/start/guise.vim
+	url = https://github.com/lambdalisue/guise.vim.git
+[submodule "vim/.vim/pack/git-plugins/start/editorconfig-vim"]
+	path = vim/.vim/pack/git-plugins/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/.vim/pack/git-plugins/start/lightline.vim"]
+	path = vim/.vim/pack/git-plugins/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim/.vim/pack/git-plugins/start/markdown-preview.nvim"]
+	path = vim/.vim/pack/git-plugins/start/markdown-preview.nvim
+	url = https://github.com/iamcco/markdown-preview.nvim.git
+[submodule "vim/.vim/pack/git-plugins/start/neoformat"]
+	path = vim/.vim/pack/git-plugins/start/neoformat
+	url = https://github.com/sbdchd/neoformat.git
+[submodule "vim/.vim/pack/git-plugins/start/nerdtree"]
+	path = vim/.vim/pack/git-plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "vim/.vim/pack/git-plugins/start/vim-tldr"]
+	path = vim/.vim/pack/git-plugins/start/vim-tldr
+	url = https://github.com/wlemuel/vim-tldr.git
+[submodule "vim/.vim/pack/git-plugins/start/vim-cursorword"]
+	path = vim/.vim/pack/git-plugins/start/vim-cursorword
+	url = https://github.com/itchyny/vim-cursorword.git
+[submodule "vim/.vim/pack/git-plugins/start/vim-fugitive"]
+	path = vim/.vim/pack/git-plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/pack/git-plugins/start/vim-openscad"]
+	path = vim/.vim/pack/git-plugins/start/vim-openscad
+	url = https://github.com/sirtaj/vim-openscad.git
+[submodule "vim/.vim/pack/git-plugins/start/vim-rhubarb"]
+	path = vim/.vim/pack/git-plugins/start/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "vim/.vim/pack/git-plugins/start/vim-github-dashboard"]
+	path = vim/.vim/pack/git-plugins/start/vim-github-dashboard
+	url = https://github.com/junegunn/vim-github-dashboard.git
+[submodule "vim/.vim/pack/git-plugins/start/github-issues.vim"]
+	path = vim/.vim/pack/git-plugins/start/github-issues.vim
+	url = https://github.com/jaxbot/github-issues.vim.git
+[submodule "vim/.vim/pack/git-plugins/start/vim-man"]
+	path = vim/.vim/pack/git-plugins/start/vim-man
+	url = https://github.com/vim-utils/vim-man.git
+[submodule "vim/.vim/pack/git-plugins/start/pest.vim"]
+	path = vim/.vim/pack/git-plugins/start/pest.vim
+	url = https://github.com/pest-parser/pest.vim.git
+[submodule "vim/.vim/pack/git-plugins/start/plenary.nvim"]
+	path = vim/.vim/pack/git-plugins/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
+[submodule "vim/.vim/pack/git-plugins/start/vim-silicon"]
+	path = vim/.vim/pack/git-plugins/start/vim-silicon
+	url = https://github.com/segeljakt/vim-silicon.git
+[submodule "vim/.vim/pack/git-plugins/start/vim-slim"]
+	path = vim/.vim/pack/git-plugins/start/vim-slim
+	url = https://github.com/slim-template/vim-slim.git
+[submodule "vim/.vim/pack/git-plugins/start/telescope.nvim"]
+	path = vim/.vim/pack/git-plugins/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim.git
