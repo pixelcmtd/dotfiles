@@ -1,12 +1,6 @@
 #!/bin/sh
 set -uxe
 
-cp -f vimrc ~/.vimrc
-mkdir -p ~/.config/nvim
-echo 'set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath=&runtimepath
-source ~/.vimrc' > ~/.config/nvim/init.vim
-
 mkdir -p ~/.vim/pack/git-plugins/start
 cd ~/.vim/pack/git-plugins/start
 
