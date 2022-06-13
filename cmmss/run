@@ -23,7 +23,7 @@ brew analytics off
 
 brew install $(cat packages.brew)
 rustup toolchain install nightly
-mas install $(cat packages.mas)
+mas install $(cat packages.mas | cut -d' ' -f1)
 pip3 install --user $(cat packages.pip3)
 cargo install $(cat packages.cargo)
 
