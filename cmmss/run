@@ -28,6 +28,7 @@ pip3 install --user $(cat packages.pip3)
 cargo install $(cat packages.cargo)
 
 ./compile_compose.sh
+defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
 cd ..
 ./run vim zsh editorconfig
