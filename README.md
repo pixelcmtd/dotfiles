@@ -5,7 +5,8 @@ installing all of the actual packages.
 
 ## chrissx Arch And Manjaro Os
 
-A very thin layer on top of your preferred Arch/Manjaro install.
+A very thin layer on top of your preferred Arch-based install. Mainly developed
+for and tested on Manjaro KDE.
 
 ```sh
 curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s caamo
@@ -19,9 +20,7 @@ primarily on "Apple silicon" (ARM), currently macOS 12 Monterey.
 We won't bother to support older macOS versions, because there is virtually no
 reason to not use the latest one. If you want to use it on another version,
 patching it should be pretty easy though. Using CMMSS on Intel-based Macs is
-also untested, but it _should_ work.
-
-## How to use
+also untested, but it _should_ just work.
 
 - Install [iTerm](https://iterm2.com/downloads/stable/latest)
 - Install [XCode](https://apps.apple.com/de/app/xcode/id497799835) from the App
@@ -32,3 +31,17 @@ also untested, but it _should_ work.
 - iTerm Preferences: General → Preferences →
   `Load preferences from a custom folder or URL` →
   `/Users/your_name/dotfiles/cmmss`
+
+### Audio plugins
+
+Many audio plugins aren't in Homebrew, or otherwise easily automateable.
+
+- [XLN](https://www.xlnaudio.com/install)
+- [destroyfx](http://destroyfx.org)
+- [Ample](https://www.amplesound.net/en/download.asp)
+- [Antares](https://www.antarestech.com/software-download/)
+- Native Access (installed through Homebrew)
+- Softube Central (installed through Homebrew)
+- [Surge](https://github.com/surge-synthesizer/releases/releases)
+- [Surge XT](https://surge-synthesizer.github.io/downloads)
+- [GVST](https://www.gvst.co.uk/downloads.htm)

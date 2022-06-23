@@ -20,6 +20,3 @@ repos = [
 ]
 
 pull_predefined = false
-
-[commands]
-"Vogelbuch" = "cd ~/vogelbuch && ./get_current_tweets.sh"
