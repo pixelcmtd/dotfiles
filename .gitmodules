@@ -76,3 +76,6 @@
 [submodule "vim/.vim/pack/git-plugins/start/telescope.nvim"]
 	path = vim/.vim/pack/git-plugins/start/telescope.nvim
 	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule "vim/.vim/pack/git-plugins/start/vim-pitch-black"]
+	path = vim/.vim/pack/git-plugins/start/vim-pitch-black
+	url = https://github.com/pixelcmtd/vim-pitch-black.git

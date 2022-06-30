@@ -177,6 +177,8 @@ snappy
 socat
 source-highlight
 stow
+surge-synthesizer
+surge-xt
 swift
 swiftformat
 swig
@@ -268,3 +270,4 @@ homebrew/cask/waterfox
 homebrew/cask-versions/wine-staging
 homebrew/cask/wireshark
 homebrew/cask/xquartz
+pixelcmtd/extra/auto-tune-access

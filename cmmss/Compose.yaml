@@ -232,37 +232,37 @@
 "_<_": "⊣"  # LEFT TACK
 "//": "⁄"  # FRACTION SLASH
 "_0": "₀"  # SUBSCRIPT ZERO
-"_1": "₁"  # SUBSCRIPT ONE
-"_2": "₂"  # SUBSCRIPT TWO
-"_3": "₃"  # SUBSCRIPT THREE
-"_4": "₄"  # SUBSCRIPT FOUR
-"_5": "₅"  # SUBSCRIPT FIVE
-"_6": "₆"  # SUBSCRIPT SIX
-"_7": "₇"  # SUBSCRIPT SEVEN
-"_8": "₈"  # SUBSCRIPT EIGHT
-"_9": "₉"  # SUBSCRIPT NONE
-"_+": "₊"  # SUBSCRIPT PLUS
-"_-": "₋"  # SUBSCRIPT MINUS
-"_=": "₌"  # SUBSCRIPT EQUALS SIGN
-"_(": "₍"  # SUBSCRIPT LEFT PARENTHESIS
-"_)": "₎"  # SUBSCRIPT RIGHT PARENTHESIS
-"_a": "ₐ"  # LATIN SUBSCRIPT SMALL LETTER A
-"_e": "ₑ"  # LATIN SUBSCRIPT SMALL LETTER E
-"_o": "ₒ"  # LATIN SUBSCRIPT SMALL LETTER O
-"_x": "ₓ"  # LATIN SUBSCRIPT SMALL LETTER X
-"_h": "ₕ"  # LATIN SUBSCRIPT SMALL LETTER H
-"_k": "ₖ"  # LATIN SUBSCRIPT SMALL LETTER K
-"_l": "ₗ"  # LATIN SUBSCRIPT SMALL LETTER L
-"_m": "ₘ"  # LATIN SUBSCRIPT SMALL LETTER M
-"_n": "ₙ"  # LATIN SUBSCRIPT SMALL LETTER N
-"_p": "ₚ"  # LATIN SUBSCRIPT SMALL LETTER P
-"_s": "ₛ"  # LATIN SUBSCRIPT SMALL LETTER S
-"_t": "ₜ"  # LATIN SUBSCRIPT SMALL LETTER T
-"_i": "ᵢ"  # LATIN SUBSCRIPT SMALL LETTER I
-"_j": "ⱼ"  # LATIN SUBSCRIPT SMALL LETTER J
-"_r": "ᵣ"  # LATIN SUBSCRIPT SMALL LETTER R
-"_u": "ᵤ"  # LATIN SUBSCRIPT SMALL LETTER U
-"_v": "ᵥ"  # LATIN SUBSCRIPT SMALL LETTER V
+"_1": "₁"
+"_2": "₂"
+"_3": "₃"
+"_4": "₄"
+"_5": "₅"
+"_6": "₆"
+"_7": "₇"
+"_8": "₈"
+"_9": "₉"
+"_+": "₊"
+"_-": "₋"
+"_=": "₌"
+"_(": "₍"
+"_)": "₎"
+"_a": "ₐ"
+"_e": "ₑ"
+"_o": "ₒ"
+"_x": "ₓ"
+"_h": "ₕ"
+"_k": "ₖ"
+"_l": "ₗ"
+"_m": "ₘ"
+"_n": "ₙ"
+"_p": "ₚ"
+"_s": "ₛ"
+"_t": "ₜ"
+"_i": "ᵢ"
+"_j": "ⱼ"
+"_r": "ᵣ"
+"_u": "ᵤ"
+"_v": "ᵥ"
 "13": "⅓"  # VULGAR FRACTION ONE THIRD
 "23": "⅔"  # VULGAR FRACTION TWO THIRDS
 "15": "⅕"  # VULGAR FRACTION ONE FIFTH
@@ -302,11 +302,6 @@
 ":~": "⍨"  # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
 ":|": "⸚"  # HYPHEN WITH DIAERESIS
 ":oo)": "°͜°"  # Funny smiley-face.
-"O.O": "Ꙭ"  # CYRILLIC CAPITAL LETTER DOUBLE MONOCULAR O * used in the dual of words based on the root for 'eye'
-"o.o": "ꙭ"  # CYRILLIC SMALL LETTER DOUBLE MONOCULAR O
-"O:": "Ꙫ"  # CYRILLIC CAPITAL LETTER BINOCULAR O * used in the dual of words based on the root for 'eye'
-"o:": "ꙫ"  # CYRILLIC SMALL LETTER BINOCULAR O
-"o+": "ꙮ"  # CYRILLIC LETTER MULTIOCULAR O * used in the epithet 'many-eyed'
 "o3": "߷"  # NKO SYMBOL GBAKURUNEN
 "!?": "‽"  # INTERROBANG
 "?!": "⸘"  # INVERTED INTERROBANG, standard now.
@@ -431,10 +426,6 @@
 "'-`": "⚟"  # THREE LINES CONVERGING LEFT
 "Bellsym": "⍾"  # BELL SYMBOL (or ALIENS LANDING) -- &-a-l-i-e-n ?
 "_^_": "⌤"  # UP ARROWHEAD BETWEEN TWO HORIZONTAL BARS; aka ENTER KEY, aka NOT AMUSED.
-"wait": "⌛"  # HOURGLASS
-"hour": "⌛"  # HOURGLASS
-"time": "⌚"  # WATCH
-"watch": "⌚"  # WATCH
 " N": " "  # EN SPACE
 " M": " "  # EM SPACE
 " 3M": " "  # THREE-PER-EM SPACE
@@ -616,30 +607,6 @@
 "thmdn": "👎"  # THUMBS DOWN SIGN
 "kiss": "💋"  # KISS MARK
 "DNE": "⛔"  # NO ENTRY
-"(1:00)": "🕐"  # CLOCK FACE ONE OCLOCK
-"(2:00)": "🕑"  # CLOCK FACE TWO OCLOCK
-"(3:00)": "🕒"  # CLOCK FACE THREE OCLOCK
-"(4:00)": "🕓"  # CLOCK FACE FOUR OCLOCK
-"(5:00)": "🕔"  # CLOCK FACE FIVE OCLOCK
-"(6:00)": "🕕"  # CLOCK FACE SIX OCLOCK
-"(7:00)": "🕖"  # CLOCK FACE SEVEN OCLOCK
-"(8:00)": "🕗"  # CLOCK FACE EIGHT OCLOCK
-"(9:00)": "🕘"  # CLOCK FACE NINE OCLOCK
-"(10:00)": "🕙"  # CLOCK FACE TEN OCLOCK
-"(11:00)": "🕚"  # CLOCK FACE ELEVEN OCLOCK
-"(12:00)": "🕛"  # CLOCK FACE TWELVE OCLOCK
-"(1:30)": "🕜"  # CLOCK FACE ONE-THIRTY
-"(2:30)": "🕝"  # CLOCK FACE TWO-THIRTY
-"(3:30)": "🕞"  # CLOCK FACE THREE-THIRTY
-"(4:30)": "🕟"  # CLOCK FACE FOUR-THIRTY
-"(5:30)": "🕠"  # CLOCK FACE FIVE-THIRTY
-"(6:30)": "🕡"  # CLOCK FACE SIX-THIRTY
-"(7:30)": "🕢"  # CLOCK FACE SEVEN-THIRTY
-"(8:30)": "🕣"  # CLOCK FACE EIGHT-THIRTY
-"(9:30)": "🕤"  # CLOCK FACE NINE-THIRTY
-"(10:30)": "🕥"  # CLOCK FACE TEN-THIRTY
-"(11:30)": "🕦"  # CLOCK FACE ELEVEN-THIRTY
-"(12:30)": "🕧"  # CLOCK FACE TWELVE-THIRTY
 "B|": "₿"  # BITCOIN SIGN
 
 # fast german
@@ -701,6 +668,8 @@
 "gy": "ψ"
 "gZ": "Ζ"
 "gz": "ζ"
+
+
 "00": "⁰"
 "11": "¹"
 "22": "²"

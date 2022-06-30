@@ -13,3 +13,5 @@
 	defaultBranch = daddy
 [alias]
 	hub = !gh
+[pull]
+	rebase = false
