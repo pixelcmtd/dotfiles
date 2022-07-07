@@ -1,0 +1,2 @@
+modprobe nct6775
+/usr/bin/sensors -s

@@ -6,6 +6,9 @@ mkdir -p ~/.bin ~/.local/bin
 sudo pacman -Syu yay
 yay -S `cat packages`
 
+sudo cp -f rc.local /etc/rc.d/rc.local
+sudo cp -f fancontrol /etc/fancontrol
+sudo systemctl enable --now fancontrol
 sudo systemctl enable --now dropbear
 
 cd ..
