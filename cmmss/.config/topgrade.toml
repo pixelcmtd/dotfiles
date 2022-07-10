@@ -20,3 +20,6 @@ repos = [
 ]
 
 pull_predefined = false
+
+[commands]
+"Time Machine" = "tmutil startbackup -b"
