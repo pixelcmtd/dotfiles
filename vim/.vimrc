@@ -24,6 +24,12 @@ set dir=~/.vim/swapfiles
 set noshowmode
 let g:lightline = {'colorscheme': 'powerlineish'}
 
+colorscheme pitch_black
+
+let g:rainbow#max_level = 256
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
+autocmd FileType * RainbowParentheses
+
 " better indent/dedent bindings
 vnoremap < <gv
 vnoremap > >gv
@@ -32,8 +38,6 @@ autocmd BufWritePre * Neoformat
 " TODO: config neoformat
 
 "autocmd BufWritePost .vimrc source %
-
-autocmd BufWritePost LocalSettings.php !pbcopy < %
 
 function! ImgBuf()
         let l:img = system("~/.iterm2/imgcat ".expand("%"))
@@ -52,7 +56,7 @@ map <Leader>v "+P
 " disables search highlighting until the next search is issued
 map <Leader>s :nohl<CR><C-L>
 
-" TODO: go up the dir dierarchier
+" TODO: go up the dir hierarchy
 
 if(filereadable("Makefile"))
         map <Leader>t :w<CR>:make test<CR>
@@ -117,7 +121,5 @@ map <Leader>bp :bprevious<CR><C-L>
 
 ":winc l<CR>
 map <Leader>n :NERDTree<CR><C-L>
-
-colorscheme pitch_black
 
 " TODO: shortcut zum anmachen von markdown editing ohne makefile

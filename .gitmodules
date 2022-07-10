@@ -79,3 +79,6 @@
 [submodule "vim/.vim/pack/git-plugins/start/vim-pitch-black"]
 	path = vim/.vim/pack/git-plugins/start/vim-pitch-black
 	url = https://github.com/pixelcmtd/vim-pitch-black.git
+[submodule "vim/.vim/pack/git-plugins/start/rainbow_parentheses.vim"]
+	path = vim/.vim/pack/git-plugins/start/rainbow_parentheses.vim
+	url = https://github.com/junegunn/rainbow_parentheses.vim.git
