@@ -26,6 +26,7 @@ echo 1 | rustup-init --default-toolchain stable --profile default
 mas install $(cat packages.mas | cut -d' ' -f1)
 pip3 install --user $(cat packages.pip3)
 cargo install $(cat packages.cargo)
+go install golang.org/x/tools/cmd/goimports@latest
 
 ./compile_compose.sh
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
