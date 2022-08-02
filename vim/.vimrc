@@ -104,9 +104,7 @@ map <Leader>d :ALEDetail<CR>
 
 " TODO: think about the usage of `input`
 map <Leader>G :exe "Git" input("Command: ")<CR>
-map <Leader>gcl :exe "Git clone --recurse-submodules -v" input("Repo: ")<CR>
-map <Leader>gcm :Git commit -v<CR>
-map <Leader>gcs :Git commit -vs<CR>
+map <Leader>gc :Git commit -v<CR>
 map <Leader>gp :Git push -v<CR>
 map <Leader>gl :Git pull<CR>
 map <Leader>gd :Git diff<CR>
