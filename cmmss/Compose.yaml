@@ -263,22 +263,25 @@
 "_r": "ᵣ"
 "_u": "ᵤ"
 "_v": "ᵥ"
-"13": "⅓"  # VULGAR FRACTION ONE THIRD
-"23": "⅔"  # VULGAR FRACTION TWO THIRDS
-"15": "⅕"  # VULGAR FRACTION ONE FIFTH
-"25": "⅖"  # VULGAR FRACTION TWO FIFTHS
-"35": "⅗"  # VULGAR FRACTION THREE FIFTHS
-"45": "⅘"  # VULGAR FRACTION FOUR FIFTHS
-"16": "⅙"  # VULGAR FRACTION ONE SIXTH
-"56": "⅚"  # VULGAR FRACTION FIVE SIXTHS
-"18": "⅛"  # VULGAR FRACTION ONE EIGHTH
-"38": "⅜"  # VULGAR FRACTION THREE EIGHTHS
-"58": "⅝"  # VULGAR FRACTION FIVE EIGHTHS
-"78": "⅞"  # VULGAR FRACTION SEVEN EIGHTHS
-"17": "⅐"  # VULGAR FRACTION ONE SEVENTH
-"19": "⅑"  # VULGAR FRACTION ONE NINTH
-"1x": "⅒"  # VULGAR FRACTION ONE TENTH
-"03": "↉"  # VULGAR FRACTION ZERO THIRDS
+"14": "¼"  # VULGAR FRACTION ONE FOURTH
+"12": "½"
+"34": "¾"
+"13": "⅓"
+"23": "⅔"
+"15": "⅕"
+"25": "⅖"
+"35": "⅗"
+"45": "⅘"
+"16": "⅙"
+"56": "⅚"
+"18": "⅛"
+"38": "⅜"
+"58": "⅝"
+"78": "⅞"
+"17": "⅐"
+"19": "⅑"
+"1x": "⅒"
+"03": "↉"
 "1/": "⅟"  # FRACTION NUMERATOR ONE
 "%1": "Ⅰ"  # ROMAN NUMERAL ONE
 "%2": "Ⅱ"  # ROMAN NUMERAL TWO
@@ -359,6 +362,9 @@
 "[4]": "⚃"  # DIE FACE-4
 "[5]": "⚄"  # DIE FACE-5
 "[6]": "⚅"  # DIE FACE-6
+"(C)": "©"  # Copyright Sign
+"(P)": "℗"  # Sound Recording Copyright
+"(R)": "®"  # REGISTERED [Trademark] SIGN
 "(CC)": "🅭"  # CIRCLED CC
 "C(CC)": "🅭"  # CIRCLED CC
 "(\\C)": "🅮"  # CIRCLED C WITH OVERLAID BACKSLASH
