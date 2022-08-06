@@ -45,3 +45,4 @@ Many audio plugins aren't in Homebrew, or otherwise easily automateable.
 - Surge (installed through Homebrew)
 - Surge XT (installed through Homebrew)
 - [GVST](https://www.gvst.co.uk/downloads.htm)
+- [Melodyne](https://services.celemony.com/cgi-bin/WebObjects/LicenseApp.woa/wa/LoginDA)

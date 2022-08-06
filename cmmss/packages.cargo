@@ -6,3 +6,4 @@ just
 rustcat
 tealdeer
 tokei
+wasm-pack
