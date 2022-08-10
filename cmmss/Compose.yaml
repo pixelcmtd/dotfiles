@@ -427,7 +427,12 @@
 "*#": "✯"  # PINWHEEL STAR
 "*!": "✱"  # HEAVY ASTERISK
 "<X>": "❖"  # BLACK DIAMOND MINUS WHITE X
-"@#": "⌘"  # PLACE OF INTEREST SIGN
+"@#": "⌘"  # PLACE OF INTEREST SIGN (Cmd/Command key)
+"cmd": "⌘"
+"opt": "⌥" # OPTION KEY
+"ctrl": "⌃" # UP ARROWHEAD (Ctrl/Control key)
+"shift": "⇧" # UPWARDS WHITE ARROW (Shift key)
+"comp": "⎄" # COMPOSITION SYMBOL (Compose Key)
 "`-'": "⚞"  # THREE LINES CONVERGING RIGHT
 "'-`": "⚟"  # THREE LINES CONVERGING LEFT
 "Bellsym": "⍾"  # BELL SYMBOL (or ALIENS LANDING) -- &-a-l-i-e-n ?
