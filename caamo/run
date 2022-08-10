@@ -13,4 +13,4 @@ sudo systemctl enable --now fancontrol
 sudo systemctl enable --now dropbear
 
 cd ..
-./run vim base
+./run base
