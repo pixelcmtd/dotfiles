@@ -1,0 +1,12 @@
+disable = ["vim", "node"]
+cleanup = true
+
+[git]
+pull_predefined = false
+repos = [
+    "~/.emacs.d",
+    "~/linux",
+    "~/Carp",
+    "~/c++std",
+    "~/dotfiles",
+]
