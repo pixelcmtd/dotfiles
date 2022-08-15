@@ -33,5 +33,11 @@ go install golang.org/x/tools/cmd/goimports@latest
 # TODO: kma or think about stuff
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
+defaults write com.apple.Safari AutoOpenSafeDownloads 0
+defaults write com.apple.Safari ShowFullURLInSmartSearchField 1
+defaults write com.apple.Safari IncludeDevelopMenu 1
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey 1
+defaults write com.apple.Safari WebKitPreferences.developerExtrasEnabled 1
+
 cd ..
 ./run base
