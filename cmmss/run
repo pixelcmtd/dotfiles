@@ -39,5 +39,7 @@ defaults write com.apple.Safari IncludeDevelopMenu 1
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey 1
 defaults write com.apple.Safari WebKitPreferences.developerExtrasEnabled 1
 
+echo pinentry-program /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac >> ~/.gnupg/gpg-agent.conf
+
 cd ..
 ./run base
