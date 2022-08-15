@@ -86,7 +86,8 @@
 "!in": "∉"  # NOT AN ELEMENT OF
 "ni": "∋"  # CONTAINS AS MEMBER
 "/ni": "∌"  # DOES NOT CONTAIN AS MEMBER
-"~=": "≅"  # APPROXIMATELY EQUAL TO (It actually means "congruent"!)
+"~=": "≈"
+"approx": "≈"
 "=?": "≟"  # QUESTIONED EQUAL TO
 "=def": "≝"  # EQUAL TO BY DEFINITION
 "def=": "≝"  # EQUAL TO BY DEFINITION
