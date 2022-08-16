@@ -55,9 +55,6 @@
 [submodule "vim/.vim/pack/git-plugins/start/vim-github-dashboard"]
 	path = base/.vim/pack/git-plugins/start/vim-github-dashboard
 	url = https://github.com/junegunn/vim-github-dashboard.git
-[submodule "vim/.vim/pack/git-plugins/start/github-issues.vim"]
-	path = base/.vim/pack/git-plugins/start/github-issues.vim
-	url = https://github.com/jaxbot/github-issues.vim.git
 [submodule "vim/.vim/pack/git-plugins/start/vim-man"]
 	path = base/.vim/pack/git-plugins/start/vim-man
 	url = https://github.com/vim-utils/vim-man.git
