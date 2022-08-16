@@ -620,14 +620,21 @@
 "kiss": "💋"  # KISS MARK
 "DNE": "⛔"  # NO ENTRY
 "B|": "₿"  # BITCOIN SIGN
+"apple": "" # APPLE LOGO
 
 # fast german
 "ae": "ä"
 "oe": "ö"
 "ue": "ü"
 "AE": "Ä"
+"Ae": "Ä"
+"aE": "Ä"
 "OE": "Ö"
+"Oe": "Ö"
+"oE": "Ö"
 "UE": "Ü"
+"Ue": "Ü"
+"uE": "Ü"
 "ss": "ß"
 "SS": "ẞ"
 

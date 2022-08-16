@@ -31,13 +31,32 @@ go install golang.org/x/tools/cmd/goimports@latest
 
 ./compile_compose.sh
 # TODO: kma or think about stuff
-defaults write .GlobalPreferences com.apple.mouse.scaling -1
+defaults write .GlobalPreferences AppleICUNumberSymbols '{ 0 = "."; 1 = ","; 10 = "."; 17 = ","; }'
+defaults write .GlobalPreferences AppleLanguages '("en-US", "de-DE")'
+defaults write .GlobalPreferences AppleLocale en_DE
+defaults write .GlobalPreferences AppleMeasurementUnits Centimeters
+defaults write .GlobalPreferences AppleMetricUnits 1
+defaults write .GlobalPreferences AppleReduceDesktopTinting 1
+defaults write .GlobalPreferences AppleShowAllExtensions 1
+defaults write .GlobalPreferences AppleTemperatureUnit Celsius
+defaults write .GlobalPreferences InitialKeyRepeat 25
+defaults write .GlobalPreferences KeyRepeat 2
+defaults write .GlobalPreferences com.apple.sound.beep.flash 0
+defaults write .GlobalPreferences com.apple.swipescrolldirection 0
+defaults write .GlobalPreferences NSPreferredWebServices '{ NSWebServicesProviderWebSearch = { NSDefaultDisplayName = DuckDuckGo; NSProviderIdentifier = "com.duckduckgo"; }; }'
 
+defaults write com.apple.Safari SearchProviderShortName DuckDuckGo
 defaults write com.apple.Safari AutoOpenSafeDownloads 0
 defaults write com.apple.Safari ShowFullURLInSmartSearchField 1
 defaults write com.apple.Safari IncludeDevelopMenu 1
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey 1
 defaults write com.apple.Safari WebKitPreferences.developerExtrasEnabled 1
+
+defaults write com.apple.Music losslessEnabled 1
+defaults write com.apple.Music downloadDolbyAtmos 1
+defaults write com.apple.Music userWantsPlaybackNotifications 0
+defaults write com.apple.Music dontWarnAboutRequiringExternalHardware 1
+defaults write com.apple.Music encoderName "Lossless Encoder"
 
 echo pinentry-program /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac >> ~/.gnupg/gpg-agent.conf
 
