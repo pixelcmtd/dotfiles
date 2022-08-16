@@ -30,7 +30,6 @@ cargo install $(cat packages.cargo)
 go install golang.org/x/tools/cmd/goimports@latest
 
 ./compile_compose.sh
-# TODO: kma or think about stuff
 defaults write .GlobalPreferences AppleICUNumberSymbols '{ 0 = "."; 1 = ","; 10 = "."; 17 = ","; }'
 defaults write .GlobalPreferences AppleLanguages '("en-US", "de-DE")'
 defaults write .GlobalPreferences AppleLocale en_DE
