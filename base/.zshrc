@@ -1,8 +1,9 @@
 #!/bin/zsh
 source ~/.env
 
+type brew >/dev/null && FPATH="$FPATH:`brew --prefix`/share/zsh/site-functions:`brew --prefix`/share/zsh/functions"
 autoload -U compaudit compinit
-compinit -u -C -d "$HOME/.zcompdump-$HOST-$ZSH_VERSION"
+compinit -u -C -d "$HOME/.zcompdump-`date +%m-%Y`-$ZSH_VERSION"
 
 zmodload -i zsh/complist
 WORDCHARS=''
