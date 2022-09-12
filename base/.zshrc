@@ -216,4 +216,6 @@ ght() (git tag $@ && git push origin --tags)
 glcp() (git pull && git commit $@ && git push)
 ghcl() (git clone --recurse-submodules -v https://github.com/$1.git $2 $3 $4)
 
-! command -v pfetch >/dev/null || pfetch
+source ~/dotfiles/base/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+! type pfetch >/dev/null || pfetch

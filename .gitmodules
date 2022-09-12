@@ -82,3 +82,6 @@
 [submodule "vim/.vim/pack/git-plugins/start/nvim-treesitter"]
 	path = base/.vim/pack/git-plugins/start/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "base/zsh-syntax-highlighting"]
+	path = base/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
