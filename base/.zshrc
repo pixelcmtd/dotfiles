@@ -58,31 +58,21 @@ setopt multios
 setopt prompt_subst
 
 _tldr_get_files() {
-        local ret
-        local files="$(fd '.*\.md' $HOME/.cache/tldr/pages/$1 -x echo {/.})"
-
-        IFS=$'\n\t'
-        for f in $files; do
-                echo $f
-        done
+        fd '.*\.md' $HOME/.cache/tldr/pages/$1 -x echo {/.}
 }
 
 _tldr_complete() {
         local word="$1"
         local cmpl=""
-        if [ "$word" = "-" ]; then
-                cmpl=$(echo $'\n-v\n-h\n-u\n-c\n-p\n-r' | sort)
-        elif [ "$word" = "--" ]; then
-                cmpl=$(echo $'--version\n--help\n--update\n--clear-cache\n--platform\n--render' | sort)
-        else
-                if [ -d "$HOME/.cache/tldr/pages" ]; then
-                        local platform="$(uname)"
-                        cmpl="$(_tldr_get_files common | sort | uniq)"
-                        if [ "$platform" = "Darwin" ]; then
-                                cmpl="${cmpl}$(_tldr_get_files osx | sort | uniq)"
-                        elif [ "$platform" = "Linux" ]; then
-                                cmpl="${cmpl}$(_tldr_get_files linux | sort | uniq)"
-                        fi
+        if [[ "$word" == "-"* ]]; then
+                cmpl=$(echo $'\n-v\n-h\n-u\n-c\n-p\n-r\n--version\n--help\n--update\n--clear-cache\n--platform\n--render' | sort)
+        elif [ -d "$HOME/.cache/tldr/pages" ]; then
+                local platform="$(uname)"
+                cmpl=$(_tldr_get_files common | sort | uniq)
+                if [ "$platform" = "Darwin" ]; then
+                        cmpl=${cmpl}$(_tldr_get_files osx | sort | uniq)
+                elif [ "$platform" = "Linux" ]; then
+                        cmpl=${cmpl}$(_tldr_get_files linux | sort | uniq)
                 fi
         fi
         reply=( "${(ps:\n:)cmpl}" )
@@ -114,7 +104,7 @@ extract() {
         local extract_dir
 
         if (( $# == 0 )); then
-                echo "Usage: extract [-option] [file ...]
+                echo "Usage: $0 [-option] [file ...]
 
 Options:
         -r, --remove    Remove archive after unpacking." >&2
@@ -160,7 +150,7 @@ Options:
         done
 }
 
-zlibd() (printf "\x1f\x8b\x08\x00\x00\x00\x00\x00"|cat - $@|gzip -dc)
+zlibd() (printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" | cat - $@ | gzip -dc)
 alias v="$VEDITOR"
 alias V="sudo $EDITOR"
 alias mv="mv -i"

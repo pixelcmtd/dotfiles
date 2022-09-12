@@ -79,7 +79,7 @@ prompt_git() {
 # - are there background jobs?
 prompt_status() {
   local -a symbols
-  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}✘"
+  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}$RETVAL"
   [[ $(jobs | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}⚙"
   [[ -n "$symbols" ]] && prompt_segment black default "$symbols"
 }
