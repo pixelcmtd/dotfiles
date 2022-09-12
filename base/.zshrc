@@ -173,6 +173,7 @@ alias la='ls --color=auto -lAFh'
 alias ls='ls --color=auto'
 
 alias grep="grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn"
+alias gr="grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn -R"
 
 alias e64=encode64
 alias d64=decode64
@@ -186,8 +187,8 @@ alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
 alias -g L='| $PAGER'
-alias -g NE='2> /dev/null'
-alias -g NUL='> /dev/null 2>&1'
+alias -g NE='2>/dev/null'
+alias -g NUL='>/dev/null 2>&1'
 
 alias g='git'
 alias ga='git add -v'
