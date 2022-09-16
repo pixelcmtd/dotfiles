@@ -85,3 +85,6 @@
 [submodule "base/zsh-syntax-highlighting"]
 	path = base/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "cmmss/theos"]
+	path = cmmss/theos
+	url = https://github.com/theos/theos.git
