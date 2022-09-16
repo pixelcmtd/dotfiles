@@ -36,7 +36,9 @@ setopt inc_append_history
 setopt share_history
 
 bindkey -e
-bindkey "^[m" copy-prev-shell-word                    # [Esc-m] - copy and paste previous word (for use in cp/mv)
+# copy and paste previous word (for use in cp/mv)
+# (cant use ^M because RET)
+bindkey "^[m" copy-prev-shell-word
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
 autoload -U up-line-or-beginning-search
@@ -82,13 +84,14 @@ _tldr_complete() {
 compctl -K _tldr_complete tldr
 
 function colored() {
-        env LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-            LESS_TERMCAP_md=$(printf "\e[1;31m") \
-            LESS_TERMCAP_me=$(printf "\e[0m") \
-            LESS_TERMCAP_se=$(printf "\e[0m") \
-            LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-            LESS_TERMCAP_ue=$(printf "\e[0m") \
-            LESS_TERMCAP_us=$(printf "\e[1;32m") _NROFF_U=1 "$@"
+        # TODO: better colors, consistent with vim/vscopium/...
+        env LESS_TERMCAP_mb=$'\e[1;31m' \
+            LESS_TERMCAP_md=$'\e[1;31m' \
+            LESS_TERMCAP_me=$'\e[0m' \
+            LESS_TERMCAP_se=$'\e[0m' \
+            LESS_TERMCAP_so=$'\e[1;44;33m' \
+            LESS_TERMCAP_ue=$'\e[0m' \
+            LESS_TERMCAP_us=$'\e[1;32m' _NROFF_U=1 "$@"
 }
 function man() { colored man "$@" ; }
 
@@ -183,13 +186,14 @@ alias zshtheme="$VEDITOR $HOME/.zshtheme"
 alias zshrc="$VEDITOR $HOME/.zshrc"
 alias vimrc="$VISUAL $HOME/.vimrc"
 alias help=man
+alias neofetch=hyfetch
 
 alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
 alias -g L='| $PAGER'
 alias -g NE='2>/dev/null'
-alias -g NUL='>/dev/null 2>&1'
+alias -g NUL='>/dev/null'
 
 alias g='git'
 alias ga='git add -v'
