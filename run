@@ -4,7 +4,7 @@ set -uxe
 for x in $@ ; do
         [ -e $x ]
         if [ -d $x ] ; then
-                [ -f $x/run ] && cd $x && ./run && cd ..
+                [ ! -f $x/run ] || (cd $x && ./run && cd ..)
                 stow $x
         fi
         [ ! -f $x ] || ./$x
