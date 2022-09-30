@@ -211,6 +211,7 @@ alias gi='git init'
 alias gl='git pull'
 alias gp='git push -v'
 alias gs='git status'
+alias gsh='git show'
 
 alias diff='git diff --no-index'
 alias rr='curl -sL http://bit.ly/10hA8iC | bash'
