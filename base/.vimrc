@@ -94,6 +94,8 @@ autocmd BufEnter *.hs map <Leader>x :w<CR>:!cabal build<CR>
 autocmd BufEnter *.hs map <Leader>r :w<CR>:!cabal run<CR>
 autocmd BufEnter *.hs map <Leader>i :w<CR>:!cabal install<CR>
 
+autocmd BufEnter *.scad map <Leader>t :w<CR>:!openscad '%' -o `echo '%' \| sed 's/\.scad$/.stl/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.scad$/.stl/'`<CR>
+
 " writing setup (named after ZERM)
 map <Leader>z :set spell<CR>:set colorcolumn=0<CR><C-L>
 
