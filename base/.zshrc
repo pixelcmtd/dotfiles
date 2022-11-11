@@ -163,7 +163,7 @@ E()    (sudo $EDITOR $(ls | fzf))
 uzip() (unzip -d "$(echo "$1" | sed s/\.zip//g -)" "$1")
 
 alias m='make -j$(nproc)'
-alias mi='sudo make -j$(nproc) install'
+alias mi='make -j$(nproc) install'
 alias mt='make -j$(nproc) test'
 
 alias o='$OPENER'

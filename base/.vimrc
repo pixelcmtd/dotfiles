@@ -100,7 +100,7 @@ autocmd BufEnter *.scad map <Leader>t :w<CR>:!openscad '%' -o `echo '%' \| sed '
 map <Leader>z :set spell<CR>:set colorcolumn=0<CR><C-L>
 
 map <Leader>T :exe "Tldr" input("Page: ")<CR>
-map <Leader>F :Telescope find_files<CR>
+map <Leader>F :Telescope find_files<CR><C-L>
 
 map <Leader>d :ALEDetail<CR>
 
