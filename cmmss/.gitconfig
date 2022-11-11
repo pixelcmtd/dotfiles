@@ -15,3 +15,5 @@
 	hub = !gh
 [pull]
 	rebase = false
+[push]
+	autoSetupRemote = true
