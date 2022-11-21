@@ -88,3 +88,6 @@
 [submodule "cmmss/theos"]
 	path = cmmss/theos
 	url = https://github.com/theos/theos.git
+[submodule "base/.vim/pack/git-plugins/start/vim-just"]
+	path = base/.vim/pack/git-plugins/start/vim-just
+	url = https://github.com/NoahTheDuke/vim-just.git
