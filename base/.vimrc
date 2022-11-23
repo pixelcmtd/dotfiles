@@ -79,6 +79,10 @@ if(filereadable("Justfile"))
         map <Leader>i :w<CR>:!just install<CR>
 endif
 
+if(filereadable("pack.toml"))
+        autocmd BufWritePost * !packwiz refresh
+endif
+
 autocmd BufEnter *.rs map <Leader>t :w<CR>:!cargo test<CR>
 autocmd BufEnter *.rs map <Leader>x :w<CR>:!cargo build<CR>
 autocmd BufEnter *.rs map <Leader>r :w<CR>:!cargo run<CR>
