@@ -4,4 +4,4 @@ set -uxe
 [ -d ~/dotfiles ] || git clone --recurse-submodules https://github.com/pixelcmtd/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
-./run $@
+./run "$@"
