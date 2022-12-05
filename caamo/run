@@ -3,8 +3,8 @@ set -uxe
 
 mkdir -p ~/.bin ~/.local/bin
 
-sudo pacman -Syu yay
-yay -S `cat packages`
+sudo pacman --noconfirm -Syu yay
+yay --noconfirm -S "$(cat packages)"
 go install golang.org/x/tools/cmd/goimports@latest
 
 sudo cp -f rc.local /etc/rc.d/rc.local
