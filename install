@@ -1,7 +1,7 @@
 #!/bin/sh
 set -uxe
 
-[ -d ~/dotfiles ] || git clone --recurse-submodules https://github.com/pixelcmtd/dotfiles.git ~/dotfiles
+[ -d ~/dotfiles ] || git clone --recurse-submodules --shallow-submodules https://github.com/pixelcmtd/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
 ./run "$@"
