@@ -1,4 +1,3 @@
-1password
 apple-fonts
 arduino
 atop
@@ -24,7 +23,6 @@ dropbear
 dstat
 element-desktop
 emacs
-fakeroot
 fd
 feh
 figlet
@@ -35,7 +33,6 @@ ftba
 fzf
 ghidra
 gimp
-git
 gnome-keyring
 gocr
 gradle
@@ -92,7 +89,6 @@ xclip
 xsane
 yarn
 yasm
-yay
 yubikey-manager
 yubikey-personalization-gui
 yubioath-desktop
