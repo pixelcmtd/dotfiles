@@ -34,7 +34,7 @@ autocmd FileType * RainbowParentheses
 vnoremap < <gv
 vnoremap > >gv
 
-autocmd BufWritePre * Neoformat
+map <Leader>f :Neoformat<CR>
 " TODO: config neoformat
 
 "autocmd BufWritePost .vimrc source %
