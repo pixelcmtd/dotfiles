@@ -1,11 +1,12 @@
 [user]
 	email = pixel@chrissx.de
 	name = pixel
-	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHLC/Ay90lTXjg8e4W7H8PKx7lFjosC7TX8rOSX/bsrS7dWGCcmopZ1D1HaDCydF7dAOSIXFfXMvCG07LK8IkVLZBGwxW47cSdgXarEegCmmtXJS14PgCXlxhEdKTY3DT3YBkVoW8E92m2KDBxLfs5Xh4DAWeG0PC86uLefC89M/yIRnRb7x2hmAn6hNTbKKXXypvCxH5YAsOhz6hvXIsaSChf4Cn6JziaHz5nHeRirS70ju50J8HijB18Ge/6pGPOV29i+g58lKJ1HrxwksuuihsOJWvhuP6DwQkCaQsrOXnNnVEhEfnhQe9S0AZKBO8w3q2HkJYmRl/RYSfvX5A3rCPB2q7xg87Jv1xLY3HWB0T58LJQt5R22daThMrCCozSnPvP14lVI0U4MTDzV5JczWRrESQNL4poJKeveLsr3/JbMqh90jllM7czrC5WNR080dGlph72bX8KvKBUNxTjNQkz1JRX5h2JHz/dzOUGoUABCOqBPgUoOq1llGXVX3k=
+	signingkey = 4D0B2AFA4202E727A9F07A207AB4E13AE464A14D
 [commit]
 	gpgsign = true
 [gpg]
-	format = ssh
+	helper = /usr/local/MacGPG2/bin/gpg
+	program = /usr/local/MacGPG2/bin/gpg
 [color]
 	ui = auto
 [init]
@@ -16,5 +17,3 @@
 	rebase = false
 [push]
 	autoSetupRemote = true
-[gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
