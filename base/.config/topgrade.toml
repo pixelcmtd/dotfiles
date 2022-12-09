@@ -4,9 +4,12 @@ cleanup = true
 [git]
 pull_predefined = false
 repos = [
+    "~/.doom.d",
     "~/.emacs.d",
-    "~/linux",
     "~/Carp",
+    "~/FreeBSD",
     "~/c++std",
     "~/dotfiles",
+    "~/linux",
+    "~/llvm",
 ]
