@@ -13,3 +13,6 @@ repos = [
     "~/linux",
     "~/llvm",
 ]
+
+[commands]
+"tldrgal" = "tldrgal update"
