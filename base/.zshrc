@@ -165,6 +165,7 @@ uzip() (unzip -d "$(echo "$1" | sed s/\.zip//g -)" "$1")
 alias m='make -j$(nproc)'
 alias mi='make -j$(nproc) install'
 alias mt='make -j$(nproc) test'
+alias j=just
 
 alias o='$OPENER'
 alias -g ...='../..'
