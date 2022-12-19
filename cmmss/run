@@ -21,7 +21,6 @@ export PATH="$PATH:/opt/local/bin:/opt/homebrew/bin:/usr/local/bin"
 curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 brew analytics off
 
-brew install x265 --HEAD
 brew bundle install
 echo 1 | rustup-init --default-toolchain stable --profile default
 pip3 install --user "$(cat packages.pip3)"
