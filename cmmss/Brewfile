@@ -292,7 +292,7 @@ brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "zstd"
 
-brew "pixelcmtd/extra/ffmpeg", args: ["with-fdk-aac", "with-game-music-emu", "with-librsvg", "with-libsoxr", "with-libssh", "with-tesseract", "with-openh264", "with-openjpeg", "with-openssl", "with-rav1e", "with-svt-av1", "with-rubberband", "with-webp", "with-zeromq", "with-zimg", "with-srt", "with-libxml2", "with-libbluray", "with-speex", "with-two-lame", "with-xvid"]
+brew "pixelcmtd/extra/ffmpeg", args: ["with-aribb24", "with-fdk-aac", "with-game-music-emu", "with-jack", "with-libaribb24", "with-libbluray", "with-libbs2b", "with-libcaca", "with-libgsm", "with-libmodplug", "with-libopenmpt", "with-librist", "with-librsvg", "with-libsoxr", "with-libssh", "with-libvidstab", "with-libvmaf", "with-libxml2", "with-opencore-amr", "with-openh264", "with-openjpeg", "with-openssl", "with-rav1e", "with-rtmpdump", "with-rubberband", "with-speex", "with-srt", "with-svt-av1", "with-tesseract", "with-two-lame", "with-webp", "with-xvid", "with-zeromq", "with-zimg"]
 
 brew "kde-mac/kde/atcore"
 brew "kde-mac/kde/elisa"
