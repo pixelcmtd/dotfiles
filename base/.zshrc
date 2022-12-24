@@ -1,9 +1,8 @@
 #!/bin/zsh
 source ~/.env
 
-type brew >/dev/null && FPATH="$FPATH:`brew --prefix`/share/zsh/site-functions:`brew --prefix`/share/zsh/functions"
 autoload -U compaudit compinit
-compinit -u -C -d "$HOME/.zcompdump-`date +%m-%Y`-$ZSH_VERSION"
+compinit -u -C -d "$HOME/.zcompdump-$ZSH_VERSION"
 
 zmodload -i zsh/complist
 WORDCHARS=''
@@ -95,9 +94,6 @@ function colored() {
 }
 function man() { colored man "$@" ; }
 
-encode64() { { [ $# -ne 0 ] && echo "$@" || cat ; } | base64 ; }
-decode64() { { [ $# -ne 0 ] && echo "$@" || cat ; } | base64 -d ; }
-
 source "$HOME/.zshtheme"
 
 alias x=extract
@@ -154,13 +150,10 @@ Options:
         done
 }
 
-zlibd() (printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" | cat - $@ | gzip -dc)
+zlibd() (printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" | cat - "$@" | gzip -dc)
 alias v="$VEDITOR"
 alias V="sudo $EDITOR"
 alias mv="mv -i"
-e()    ($VEDITOR $(ls | fzf))
-E()    (sudo $EDITOR $(ls | fzf))
-uzip() (unzip -d "$(echo "$1" | sed s/\.zip//g -)" "$1")
 
 alias m='make -j$(nproc)'
 alias mi='make -j$(nproc) install'
@@ -172,7 +165,6 @@ alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'
-alias l='ls --color=auto -lFah'
 alias ll='ls --color=auto -lh'
 alias la='ls --color=auto -lAFh'
 alias ls='ls --color=auto'
@@ -180,12 +172,10 @@ alias ls='ls --color=auto'
 alias grep="grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn"
 alias gr="grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn -R"
 
-alias e64=encode64
-alias d64=decode64
-
 alias zshtheme="$VEDITOR $HOME/.zshtheme"
 alias zshrc="$VEDITOR $HOME/.zshrc"
 alias vimrc="$VISUAL $HOME/.vimrc"
+
 alias help=man
 alias neofetch=hyfetch
 
@@ -213,14 +203,15 @@ alias gl='git pull'
 alias gp='git push -v'
 alias gs='git status'
 alias gsh='git show'
+alias gck='git checkout'
 
 alias diff='git diff --no-index'
 alias rr='curl -sL http://bit.ly/10hA8iC | bash'
 alias tmp='pushd ; cd $(mktemp -d)'
 alias pwn='docker run --rm -it chrissx/pwn'
 
-ght() (git tag $@ && git push origin --tags)
-glcp() (git pull && git commit $@ && git push)
+ght() (git tag "$@" && git push origin --tags)
+glcp() (git pull && git commit "$@" && git push)
 ghcl() (git clone --recurse-submodules -v https://github.com/$1.git $2 $3 $4)
 
 source ~/dotfiles/base/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
