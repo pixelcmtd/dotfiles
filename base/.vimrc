@@ -37,17 +37,6 @@ vnoremap > >gv
 map <Leader>f :Neoformat<CR>
 " TODO: config neoformat
 
-"autocmd BufWritePost .vimrc source %
-
-function! ImgBuf()
-        let l:img = system("~/.iterm2/imgcat ".expand("%"))
-        normal ggdG
-        AnsiEsc
-        put =l:img
-endfunction
-
-autocmd BufEnter *.png,*.jpg,*.gif,*.heic exec "!~/.iterm2/imgcat ".expand("%") | :bw
-
 autocmd BufEnter *.adn setfiletype clojure
 
 map <Leader>c "+y
