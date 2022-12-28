@@ -60,7 +60,7 @@ setopt multios
 setopt prompt_subst
 
 _tldr_get_files() {
-        fd '.*\.md' $HOME/.cache/tldr/pages/$1 -x echo {/.}
+        fd . -e md $HOME/.cache/tldr/pages/$1 -X echo {/.} | tr ' ' '\n'
 }
 
 _tldr_complete() {
