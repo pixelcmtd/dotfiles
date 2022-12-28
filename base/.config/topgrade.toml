@@ -1,4 +1,4 @@
-disable = ["vim", "node"]
+disable = ["vim", "node", "pnpm"]
 cleanup = true
 
 [git]

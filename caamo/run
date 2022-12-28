@@ -6,7 +6,6 @@ mkdir -p ~/.bin ~/.local/bin
 sudo pacman --noconfirm -Syu yay patch
 yay --noconfirm -S $(cat packages)
 command -v systemctl >/dev/null && yay -S 1password
-go install golang.org/x/tools/cmd/goimports@latest
 
 sudo cp -f rc.local /etc/rc.d/rc.local
 sudo cp -f fancontrol /etc/fancontrol

@@ -2,3 +2,7 @@
 set -uxe
 cd .vim/pack/git-plugins/start/coc.nvim
 yarn install
+
+go install golang.org/x/tools/cmd/goimports@latest
+xe -f packages.cargo cargo install
+dart pub global activate fvm
