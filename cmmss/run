@@ -25,7 +25,7 @@ brew analytics off
 
 brew bundle install
 echo 1 | rustup-init --default-toolchain stable --profile default
-pip3 install --user "$(cat packages.pip3)"
+xe -vf packages.pip3 pip3 install --user
 
 ./compile_compose.sh
 defaults write .GlobalPreferences AppleICUNumberSymbols '{ 0 = "."; 1 = ","; 10 = "."; 17 = ","; }'
