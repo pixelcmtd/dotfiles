@@ -1,7 +1,8 @@
 #!/bin/sh
 set -uxe
+dest=~/src/pixelcmtd/dotfiles
 
-[ -d ~/dotfiles ] || git clone --recurse-submodules --shallow-submodules https://github.com/pixelcmtd/dotfiles.git ~/dotfiles
-cd ~/dotfiles
+[ -d $dest ] || git clone --recurse-submodules --shallow-submodules https://github.com/pixelcmtd/dotfiles.git $dest
+cd $dest
 
 ./run "$@"
