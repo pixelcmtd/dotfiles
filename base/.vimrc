@@ -21,6 +21,12 @@ set notimeout ttimeout ttimeoutlen=5
 exec system("mkdir -p ~/.vim/swapfiles")
 set dir=~/.vim/swapfiles
 
+exec system("mkdir -p ~/.vim/backupfiles")
+set bdir=~/.vim/backupfiles
+
+exec system("mkdir -p ~/.vim/undofiles")
+set udir=~/.vim/undofiles
+
 set noshowmode
 let g:lightline = {'colorscheme': 'powerlineish'}
 
@@ -76,7 +82,7 @@ autocmd BufEnter *.hs map <Leader>x :w<CR>:!cabal build<CR>
 
 autocmd BufEnter *.scad map <Leader>t :w<CR>:!openscad '%' -o `echo '%' \| sed 's/\.scad$/.stl/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.scad$/.stl/'`<CR>
 
-autocmd BufEnter *.svg map <Leader>t :w<CR>:!open %<CR>
+autocmd BufEnter *.svg map <Leader>t :w<CR>:!`type xdg-open >/dev/null && echo xdg-open \|\| echo open` '%'<CR>
 
 " writing setup (named after ZERM)
 map <Leader>z :set spell<CR>:set colorcolumn=0<CR><C-L>
