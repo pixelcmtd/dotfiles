@@ -109,4 +109,10 @@ map <Leader>bp :bprevious<CR><C-L>
 ":winc l<CR>
 map <Leader>n :NERDTree<CR><C-L>
 
+imap <C-a> <Home>
+imap <C-e> <End>
+
+vmap J :m >+1<CR>gv=gv
+vmap K :m <-2<CR>gv=gv
+
 " TODO: shortcut zum anmachen von markdown editing ohne makefile
