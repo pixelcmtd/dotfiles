@@ -47,45 +47,32 @@ map <Leader>s :nohl<CR><C-L>
 
 " TODO: go up the dir hierarchy
 
-if(filereadable("Makefile"))
-        map <Leader>t :w<CR>:make test<CR>
-        map <Leader>x :w<CR>:make<CR>
-        map <Leader>r :w<CR>:make run<CR>
-        map <Leader>i :w<CR>:make install<CR>
-endif
+" TODO: some asking maybe
+map <Leader>t :w<CR>:make test<CR>
+map <Leader>x :w<CR>:make<CR>
+map <Leader>r :w<CR>:make run<CR>
+map <Leader>i :w<CR>:make install<CR>
 
 if(filereadable("Smfile"))
-        map <Leader>t :w<CR>:!sm test<CR>
-        map <Leader>x :w<CR>:!sm<CR>
-        map <Leader>r :w<CR>:!sm run<CR>
-        map <Leader>i :w<CR>:!sm install<CR>
+        set makeprg=sm
 endif
 
 if(filereadable("Justfile"))
-        map <Leader>t :w<CR>:!just test<CR>
-        map <Leader>x :w<CR>:!just build<CR>
-        map <Leader>r :w<CR>:!just run<CR>
-        map <Leader>i :w<CR>:!just install<CR>
+        set makeprg=just
 endif
 
 if(filereadable("pack.toml"))
         autocmd BufWritePost * !packwiz refresh
 endif
 
-autocmd BufEnter *.rs map <Leader>t :w<CR>:!cargo test<CR>
+autocmd BufEnter *.rs set makeprg=cargo
 autocmd BufEnter *.rs map <Leader>x :w<CR>:!cargo build<CR>
-autocmd BufEnter *.rs map <Leader>r :w<CR>:!cargo run<CR>
-autocmd BufEnter *.rs map <Leader>i :w<CR>:!cargo install<CR>
 
-autocmd BufEnter *.swift map <Leader>t :w<CR>:!PATH=/usr/bin swift test<CR>
+autocmd BufEnter *.swift set makeprg="PATH=/usr/bin swift"
 autocmd BufEnter *.swift map <Leader>x :w<CR>:!PATH=/usr/bin swift build<CR>
-autocmd BufEnter *.swift map <Leader>r :w<CR>:!PATH=/usr/bin swift run<CR>
-autocmd BufEnter *.swift map <Leader>i :w<CR>:!PATH=/usr/bin swift install<CR>
 
-autocmd BufEnter *.hs map <Leader>t :w<CR>:!cabal test<CR>
+autocmd BufEnter *.hs set makeprg=cabal
 autocmd BufEnter *.hs map <Leader>x :w<CR>:!cabal build<CR>
-autocmd BufEnter *.hs map <Leader>r :w<CR>:!cabal run<CR>
-autocmd BufEnter *.hs map <Leader>i :w<CR>:!cabal install<CR>
 
 autocmd BufEnter *.scad map <Leader>t :w<CR>:!openscad '%' -o `echo '%' \| sed 's/\.scad$/.stl/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.scad$/.stl/'`<CR>
 
