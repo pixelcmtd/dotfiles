@@ -364,8 +364,13 @@
 "[5]": "⚄"  # DIE FACE-5
 "[6]": "⚅"  # DIE FACE-6
 "(C)": "©"  # Copyright Sign
+"(c)": "©"
 "(P)": "℗"  # Sound Recording Copyright
+"(p)": "℗"
 "(R)": "®"  # REGISTERED [Trademark] SIGN
+"(r)": "®"
+"tm": "™"
+"TM": "™"
 "(CC)": "🅭"  # CIRCLED CC
 "C(CC)": "🅭"  # CIRCLED CC
 "(\\C)": "🅮"  # CIRCLED C WITH OVERLAID BACKSLASH
@@ -682,7 +687,7 @@
 "gZ": "Ζ"
 "gz": "ζ"
 
-
+# superscript without ^ because that doesn't work
 "00": "⁰"
 "11": "¹"
 "22": "²"
@@ -694,5 +699,9 @@
 "88": "⁸"
 "99": "⁹"
 "ii": "ⁱ"
-"tm": "™"
-"TM": "™"
+"nn": "ⁿ"
+"++": "⁺"
+"--": "⁻"
+#"==": "⁼"
+#"((": "⁽"
+#"))": "⁾"
