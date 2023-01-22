@@ -7,3 +7,10 @@ go install golang.org/x/tools/cmd/goimports@latest
 xe -vf packages.cargo cargo install
 pip3 install yt-dlp
 dart pub global activate fvm
+
+gh api /user/memberships/orgs --jq 'map(.organization.login) + ["pixelcmtd", "dart-lang", "qemu"] | join("\n")' | \
+        grep -Ev 'EpicGames|tldr-pages' | \
+        xe -j0 -- gh repo list -L 1000 --no-archived --source --json owner,name --jq 'map(.owner.login + "/" + .name) | map([., .]) | flatten + ["llvm/llvm-project","llvm", "torvalds/linux","linux", "openbsd/src","openbsd", "freebsd/freebsd-src","freebsd", "cplusplus/draft","c++std", "carp-lang/Carp","Carp"] | join("\n")' | \
+        xe -N2 -j0 sh -c '[ -d ~/src/$2 ] || echo "gh repo clone $1 ~/src/$2 -- --recurse-submodules -qv"' -s | \
+        sort | uniq | \
+        xe -vj10 sh -c
