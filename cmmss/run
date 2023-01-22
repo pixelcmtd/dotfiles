@@ -1,17 +1,17 @@
 #!/bin/bash
 set -ue
 
-read -rp 'To improve your experience, we will agree to some Apple SLAs for you.
-To agree, press enter. To disagree, press ctrl-c.'
-
-xcode-select --install && \
-read -rp "A window that lets you install XCode CLI tools should have opened.
+xcode-select -p >/dev/null 2>/dev/null || {
+        xcode-select --install
+        read -rp "A window that lets you install XCode CLI tools should have opened.
 If you've closed it, run \`xcode-select --install\` to reopen it.
-Please install the XCode CLI tools and then press enter." || true
+Please install the XCode CLI tools and then press enter."
+}
 
-[ "`arch`" = arm64 ] && {
-        echo "Detected an ARM CPU, installing Rosetta..."
-        echo A | sudo softwareupdate --install-rosetta
+[ "$(arch)" != arm64 ] || pgrep -q oahd || {
+        read -rp 'Detected an ARM CPU, please press enter to agree to the Rosetta 2 license.
+To disagree, press ctrl-c.'
+        sudo softwareupdate --install-rosetta --agree-to-license
 }
 
 set -x
