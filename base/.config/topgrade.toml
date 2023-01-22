@@ -2,16 +2,11 @@ disable = ["vim", "node", "pnpm"]
 cleanup = true
 
 [git]
+max_concurrency = 10
 pull_predefined = false
 repos = [
-    "~/.doom.d",
-    "~/.emacs.d",
-    "~/Carp",
-    "~/FreeBSD",
-    "~/c++std",
-    "~/dotfiles",
-    "~/linux",
-    "~/llvm",
+    "~/src/*",
+    "~/src/*/*",
 ]
 
 [commands]
