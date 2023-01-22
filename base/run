@@ -4,5 +4,6 @@ cd .vim/pack/git-plugins/start/coc.nvim
 yarn install
 
 go install golang.org/x/tools/cmd/goimports@latest
-xe -f packages.cargo cargo install
+xe -vf packages.cargo cargo install
+pip3 install yt-dlp
 dart pub global activate fvm
