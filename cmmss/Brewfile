@@ -295,7 +295,6 @@ brew "zstd"
 brew "pixelcmtd/extra/ffmpeg", args: ["with-aribb24", "with-fdk-aac", "with-game-music-emu", "with-jack", "with-libaribb24", "with-libbluray", "with-libbs2b", "with-libcaca", "with-libgsm", "with-libmodplug", "with-libopenmpt", "with-librist", "with-librsvg", "with-libsoxr", "with-libssh", "with-libvidstab", "with-libvmaf", "with-libxml2", "with-opencore-amr", "with-openh264", "with-openjpeg", "with-openssl", "with-rav1e", "with-rtmpdump", "with-rubberband", "with-speex", "with-srt", "with-svt-av1", "with-tesseract", "with-two-lame", "with-webp", "with-xvid", "with-zeromq", "with-zimg"]
 
 brew "kde-mac/kde/atcore"
-brew "kde-mac/kde/elisa"
 brew "kde-mac/kde/kcalc"
 brew "kde-mac/kde/kdiagram"
 brew "kde-mac/kde/kdialog"
