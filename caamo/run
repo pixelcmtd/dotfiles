@@ -12,5 +12,4 @@ sudo cp -f fancontrol /etc/fancontrol
 sudo systemctl enable --now fancontrol
 sudo systemctl enable --now dropbear
 
-cd ..
-./run base
+cd .. && ./run base

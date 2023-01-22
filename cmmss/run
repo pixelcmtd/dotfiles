@@ -18,7 +18,9 @@ set -x
 
 export PATH="$PATH:/opt/local/bin:/opt/homebrew/bin:/usr/local/bin"
 
-curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
+[[ -d /opt/homebrew && "$(arch)" = arm64 ]] || \
+        [[ -d /usr/local/bin/brew && "$(arch)" = x86_64 ]] || \
+        curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 brew analytics off
 
 brew bundle install
@@ -55,5 +57,4 @@ defaults write com.apple.Music encoderName "Lossless Encoder"
 
 echo pinentry-program /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac >> ~/.gnupg/gpg-agent.conf
 
-cd ..
-./run base
+cd .. && ./run base
