@@ -99,15 +99,14 @@ map <Leader>F :Telescope find_files<CR><C-L>
 
 map <Leader>d :ALEDetail<CR>
 
-" TODO: think about the usage of `input`
-map <Leader>G :exe "Git" input("Command: ")<CR>
+map <Leader>G :Git 
 map <Leader>gc :Git commit -v<CR>
 map <Leader>gp :Git push -v<CR>
 map <Leader>gl :Git pull<CR>
 map <Leader>gd :Git diff<CR>
 map <Leader>gi :Git init<CR>
 map <Leader>gs :Git status<CR>
-map <Leader>gad :exe "Git add -v" input("File(s): ")<CR>
+map <Leader>gad :Git add -v 
 map <Leader>gaa :Git add -vA<CR>
 map <Leader>gap :Git add -vp<CR>
 
