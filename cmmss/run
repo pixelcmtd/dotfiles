@@ -28,7 +28,7 @@ echo 1 | rustup-init --default-toolchain stable --profile default
 xe -vf packages.pip3 pip3 install --user
 
 ./compile_compose.sh
-defaults write .GlobalPreferences AppleICUNumberSymbols '{ 0 = "."; 1 = ","; 10 = "."; 17 = ","; }'
+defaults write .GlobalPreferences AppleICUNumberSymbols '{ 0 = "."; 1 = " "; 10 = "."; 17 = " "; }'
 defaults write .GlobalPreferences AppleLanguages '("en-US", "de-DE")'
 defaults write .GlobalPreferences AppleLocale en_DE
 defaults write .GlobalPreferences AppleMeasurementUnits Centimeters
