@@ -158,7 +158,8 @@ alias mv="mv -i"
 alias m='make -j$(nproc)'
 alias mi='make -j$(nproc) install'
 alias mt='make -j$(nproc) test'
-alias j=just
+alias mo='make -j$(nproc) && `type xdg-open >/dev/null && echo xdg-open || echo open`'
+alias j='just -v'
 
 alias o="`type xdg-open >/dev/null && echo xdg-open || echo open`"
 alias -g ...='../..'
