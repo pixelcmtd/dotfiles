@@ -160,7 +160,7 @@ alias mi='make -j$(nproc) install'
 alias mt='make -j$(nproc) test'
 alias j=just
 
-alias o='$OPENER'
+alias o="`type xdg-open >/dev/null && echo xdg-open || echo open`"
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
