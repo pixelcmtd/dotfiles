@@ -1,12 +1,13 @@
 #!/bin/sh
 set -uxe
-cd .vim/pack/git-plugins/start/coc.nvim
-yarn install
 
 go install golang.org/x/tools/cmd/goimports@latest
 xe -vf packages.cargo cargo install
 pip3 install yt-dlp
 dart pub global activate fvm
+
+cd .vim/pack/git-plugins/start/coc.nvim
+yarn install
 
 gh api /user/memberships/orgs --jq 'map(.organization.login) + ["pixelcmtd", "dart-lang", "qemu"] | join("\n")' | \
         grep -Ev 'EpicGames|tldr-pages' | \
