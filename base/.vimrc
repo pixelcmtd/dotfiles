@@ -83,6 +83,7 @@ autocmd BufEnter *.hs map <Leader>x :w<CR>:!cabal build<CR>
 autocmd BufEnter *.scad map <Leader>t :w<CR>:!openscad '%' -o `echo '%' \| sed 's/\.scad$/.stl/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.scad$/.stl/'`<CR>
 
 autocmd BufEnter *.svg map <Leader>t :w<CR>:!`type xdg-open >/dev/null && echo xdg-open \|\| echo open` '%'<CR>
+" TODO: slim
 
 " writing setup (named after ZERM)
 map <Leader>z :set spell<CR>:set colorcolumn=0<CR><C-L>
@@ -111,6 +112,7 @@ map <Leader>n :NERDTree<CR><C-L>
 
 imap <C-a> <Home>
 imap <C-e> <End>
+imap <C-u> <Esc>cc
 
 vmap J :m >+1<CR>gv=gv
 vmap K :m <-2<CR>gv=gv
