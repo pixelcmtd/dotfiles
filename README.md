@@ -30,7 +30,7 @@ also untested, but it _should_ “just work”.
   `curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s cmmss`
 - iTerm Preferences (⌘,): General → Preferences →
   `Load preferences from a custom folder or URL` →
-  `/Users/your_name/dotfiles/cmmss`
+  `/Users/your_name/src/pixelcmtd/dotfiles/cmmss`
 
 ### Other software (esp. audio plugins)
 
