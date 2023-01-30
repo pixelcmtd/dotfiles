@@ -24,7 +24,7 @@ export PATH="$PATH:/opt/local/bin:/opt/homebrew/bin:/usr/local/bin"
 brew analytics off
 
 brew bundle install
-echo 1 | rustup-init --default-toolchain stable --profile default
+rustup-init --default-toolchain stable --profile default -vy
 xe -vf packages.pip3 pip3 install --user
 
 ./compile_compose.sh
