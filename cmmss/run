@@ -36,10 +36,7 @@ defaults write .GlobalPreferences AppleMetricUnits 1
 defaults write .GlobalPreferences AppleReduceDesktopTinting 1
 defaults write .GlobalPreferences AppleShowAllExtensions 1
 defaults write .GlobalPreferences AppleTemperatureUnit Celsius
-defaults write .GlobalPreferences InitialKeyRepeat 25
-defaults write .GlobalPreferences KeyRepeat 2
 defaults write .GlobalPreferences com.apple.sound.beep.flash 0
-defaults write .GlobalPreferences com.apple.swipescrolldirection 0
 defaults write .GlobalPreferences NSPreferredWebServices '{ NSWebServicesProviderWebSearch = { NSDefaultDisplayName = DuckDuckGo; NSProviderIdentifier = "com.duckduckgo"; }; }'
 
 defaults write com.apple.Safari SearchProviderShortName DuckDuckGo
