@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 set -ue
 
 xcode-select -p >/dev/null 2>/dev/null || {
@@ -16,7 +16,13 @@ To disagree, press ctrl-c.'
 
 set -x
 
-export PATH="$PATH:/opt/local/bin:/opt/homebrew/bin:/usr/local/bin"
+sudo systemsetup -setcomputersleep Never
+sudo systemsetup -setdisplaysleep 10
+sudo systemsetup -setusingnetworktime On
+sudo systemsetup -setallowpowerbuttontosleepcomputer On
+sudo systemsetup -setremotelogin On
+
+source .env
 
 [[ -d /opt/homebrew && "$(arch)" = arm64 ]] || \
         [[ -d /usr/local/bin/brew && "$(arch)" = x86_64 ]] || \
