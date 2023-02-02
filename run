@@ -5,7 +5,7 @@ for x in "$@" ; do
         [ -e "$x" ]
         if [ -d "$x" ] ; then
                 [ ! -f "$x/run" ] || ( cd "$x" && ./run )
-                stow "$x"
+                stow -vv "$x"
         fi
         [ ! -f "$x" ] || "./$x"
 done
