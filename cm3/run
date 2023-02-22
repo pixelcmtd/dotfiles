@@ -11,9 +11,10 @@ source .env
         [[ -f /usr/local/bin/brew && "$(arch)" = x86_64 ]] || \
         curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 brew analytics off
-brew bundle install
+brew bundle install -v
 
 cd ../cmmss
+pip3 install --user gen-compose
 ./compile_compose.sh
 cd ../cm3
 
