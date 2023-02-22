@@ -151,7 +151,7 @@ Options:
 }
 
 zlibd() (printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" | cat - "$@" | gzip -dc)
-alias v="$VEDITOR"
+alias v="$VISUAL"
 alias V="sudo $EDITOR"
 alias mv="mv -i"
 
@@ -173,8 +173,8 @@ alias ls='ls --color=auto'
 alias grep="grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn"
 alias gr="grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn -R"
 
-alias zshtheme="$VEDITOR $HOME/.zshtheme"
-alias zshrc="$VEDITOR $HOME/.zshrc"
+alias zshtheme="$VISUAL $HOME/.zshtheme"
+alias zshrc="$VISUAL $HOME/.zshrc"
 alias vimrc="$VISUAL $HOME/.vimrc"
 
 alias help=man

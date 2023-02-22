@@ -22,13 +22,12 @@ reason to not use the latest one. If you want to use it on another version,
 patching it should be pretty easy though. Using CMMSS on Intel-based Macs is
 also untested, but it _should_ “just work”.
 
-- Install [iTerm](https://iterm2.com/downloads/stable/latest)
 - Install [XCode](https://apps.apple.com/de/app/xcode/id497799835) from the App
   Store (`open -a "App Store" https://apps.apple.com/de/app/xcode/id497799835`)
 - Run `sudo xcodebuild -license` and agree to the license
 - Run
   `curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s cmmss`
-- iTerm Preferences (⌘,): General → Preferences →
+- Open iTerm, go to the Preferences (⌘,): General → Preferences →
   `Load preferences from a custom folder or URL` →
   `/Users/your_name/src/pixelcmtd/dotfiles/cmmss`
 
