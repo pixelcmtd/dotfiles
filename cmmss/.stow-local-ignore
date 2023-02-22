@@ -3,6 +3,7 @@ Compose.yaml
 compile_compose.sh
 meditate.25.png
 Brewfile
+Brewfile.lock.json
 packages.pip3
 run
 sync.sh
