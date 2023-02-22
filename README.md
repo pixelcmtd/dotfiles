@@ -46,3 +46,11 @@ easily automateable.
 - Softube Central (installed through Homebrew)
 - [GVST](https://www.gvst.co.uk/downloads.htm)
 - [Melodyne](https://services.celemony.com/cgi-bin/WebObjects/LicenseApp.woa/wa/LoginDA)
+
+## chrissx Media Maker Machine
+
+The setup for our machine shop computer.
+
+```sh
+curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s cm3
+```

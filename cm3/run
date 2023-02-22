@@ -1,0 +1,34 @@
+#!/bin/zsh
+set -uxe
+
+sudo systemsetup -setusingnetworktime On
+sudo systemsetup -setallowpowerbuttontosleepcomputer On
+sudo systemsetup -setremotelogin On
+
+source .env
+
+[[ -d /opt/homebrew && "$(arch)" = arm64 ]] || \
+        [[ -f /usr/local/bin/brew && "$(arch)" = x86_64 ]] || \
+        curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
+brew analytics off
+brew bundle install
+
+cd ../cmmss
+./compile_compose.sh
+cd ../cm3
+
+defaults write .GlobalPreferences AppleICUNumberSymbols '{ 0 = "."; 1 = " "; 10 = "."; 17 = " "; }'
+defaults write .GlobalPreferences AppleLanguages '("en-US", "de-DE")'
+defaults write .GlobalPreferences AppleLocale en_DE
+defaults write .GlobalPreferences AppleMeasurementUnits Centimeters
+defaults write .GlobalPreferences AppleMetricUnits 1
+defaults write .GlobalPreferences AppleReduceDesktopTinting 1
+defaults write .GlobalPreferences AppleShowAllExtensions 1
+defaults write .GlobalPreferences AppleTemperatureUnit Celsius
+defaults write .GlobalPreferences NSPreferredWebServices '{ NSWebServicesProviderWebSearch = { NSDefaultDisplayName = DuckDuckGo; NSProviderIdentifier = "com.duckduckgo"; }; }'
+
+defaults write com.apple.Safari SearchProviderShortName DuckDuckGo
+defaults write com.apple.Safari AutoOpenSafeDownloads 0
+defaults write com.apple.Safari ShowFullURLInSmartSearchField 1
+
+cd .. && ./run base
