@@ -31,5 +31,3 @@ defaults write .GlobalPreferences NSPreferredWebServices '{ NSWebServicesProvide
 defaults write com.apple.Safari SearchProviderShortName DuckDuckGo
 defaults write com.apple.Safari AutoOpenSafeDownloads 0
 defaults write com.apple.Safari ShowFullURLInSmartSearchField 1
-
-cd .. && ./run base
