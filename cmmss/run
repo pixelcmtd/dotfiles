@@ -25,7 +25,7 @@ sudo systemsetup -setremotelogin On
 source .env
 
 [[ -d /opt/homebrew && "$(arch)" = arm64 ]] || \
-        [[ -d /usr/local/bin/brew && "$(arch)" = x86_64 ]] || \
+        [[ -f /usr/local/bin/brew && "$(arch)" = x86_64 ]] || \
         curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 brew analytics off
 
