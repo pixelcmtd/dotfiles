@@ -113,6 +113,7 @@ map <Leader>n :NERDTree<CR><C-L>
 imap <C-a> <Home>
 imap <C-e> <End>
 imap <C-u> <Esc>cc
+imap <C-k> <Esc>lC
 
 vmap J :m >+1<CR>gv=gv
 vmap K :m <-2<CR>gv=gv
