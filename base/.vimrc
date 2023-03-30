@@ -80,6 +80,8 @@ autocmd BufEnter *.swift map <Leader>x :w<CR>:!PATH=/usr/bin swift build<CR>
 autocmd BufEnter *.hs set makeprg=cabal
 autocmd BufEnter *.hs map <Leader>x :w<CR>:!cabal build<CR>
 
+autocmd BufEnter *.md map <Leader>t :w<CR>:!pandoc '%' -o `echo '%' \| sed 's/\.md$/.pdf/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.md$/.pdf/'`<CR>
+
 autocmd BufEnter *.scad map <Leader>t :w<CR>:!openscad '%' -o `echo '%' \| sed 's/\.scad$/.stl/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.scad$/.stl/'`<CR>
 
 autocmd BufEnter *.svg map <Leader>t :w<CR>:!`type xdg-open >/dev/null && echo xdg-open \|\| echo open` '%'<CR>
@@ -117,5 +119,3 @@ imap <C-k> <Esc>lC
 
 vmap J :m >+1<CR>gv=gv
 vmap K :m <-2<CR>gv=gv
-
-" TODO: shortcut zum anmachen von markdown editing ohne makefile
