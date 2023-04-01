@@ -82,6 +82,8 @@ autocmd BufEnter *.hs map <Leader>x :w<CR>:!cabal build<CR>
 
 autocmd BufEnter *.md map <Leader>t :w<CR>:!pandoc '%' -o `echo '%' \| sed 's/\.md$/.pdf/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.md$/.pdf/'`<CR>
 
+autocmd BufEnter *.tex map <Leader>t :w<CR>:!pdflatex '%' && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.tex$/.pdf/'`<CR>
+
 autocmd BufEnter *.scad map <Leader>t :w<CR>:!openscad '%' -o `echo '%' \| sed 's/\.scad$/.stl/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.scad$/.stl/'`<CR>
 
 autocmd BufEnter *.svg map <Leader>t :w<CR>:!`type xdg-open >/dev/null && echo xdg-open \|\| echo open` '%'<CR>
