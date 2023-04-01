@@ -1,6 +1,6 @@
 CC ?= cc
 LIPO ?= lipo
-CFLAGS = -framework CoreFoundation -framework IOKit -mmacosx-version-min=10.4
+CFLAGS := -framework CoreFoundation -framework IOKit -mmacosx-version-min=10.4
 
 all: kma
 
