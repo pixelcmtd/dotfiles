@@ -1,4 +1,4 @@
-disable = ["vim", "node", "pnpm"]
+disable = ["cargo", "vim", "node", "pnpm"]
 cleanup = true
 
 [git]
@@ -10,4 +10,5 @@ repos = [
 ]
 
 [commands]
+"dotfiles" = "cd ~/src/pixelcmtd/dotfiles/base && ./run"
 "tldrgal" = "tldrgal update"

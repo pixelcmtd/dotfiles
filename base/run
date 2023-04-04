@@ -2,8 +2,8 @@
 set -uxe
 
 go install golang.org/x/tools/cmd/goimports@latest
-xe -vf packages.cargo cargo install
-pip3 install yt-dlp
+xe -vf packages.cargo cargo install --bins
+pip3 install -U yt-dlp
 dart pub global activate fvm
 
 cd .vim/pack/git-plugins/start/coc.nvim
