@@ -7,9 +7,6 @@
 [submodule "vim/.vim/pack/git-plugins/start/asyncrun.vim"]
 	path = base/.vim/pack/git-plugins/start/asyncrun.vim
 	url = https://github.com/skywind3000/asyncrun.vim.git
-[submodule "vim/.vim/pack/git-plugins/start/coc.nvim"]
-	path = base/.vim/pack/git-plugins/start/coc.nvim
-	url = https://github.com/neoclide/coc.nvim.git
 [submodule "vim/.vim/pack/git-plugins/start/denops.vim"]
 	path = base/.vim/pack/git-plugins/start/denops.vim
 	url = https://github.com/vim-denops/denops.vim.git
@@ -91,3 +88,7 @@
 [submodule "base/.vim/pack/git-plugins/start/vim-just"]
 	path = base/.vim/pack/git-plugins/start/vim-just
 	url = https://github.com/NoahTheDuke/vim-just.git
+[submodule "base/.vim/pack/git-plugins/start/coc.nvim"]
+	path = base/.vim/pack/git-plugins/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+	branch = release

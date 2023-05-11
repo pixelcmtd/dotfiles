@@ -6,9 +6,6 @@ xe -vf packages.cargo cargo install --bins
 pip3 install -U yt-dlp
 dart pub global activate fvm
 
-cd .vim/pack/git-plugins/start/coc.nvim
-yarn install
-
 gh api /user/memberships/orgs --jq 'map(.organization.login) + ["'"$(gh api /user --jq .login)"'", "dart-lang", "qemu"] | join("\n")' | \
         grep -Ev 'EpicGames|tldr-pages' | \
         # TODO: apple things
