@@ -637,6 +637,12 @@
 "ss": "ß"
 "SS": "ẞ"
 
+# swedish and some other nordic languages
+"aa": "å"
+"Aa": "Å"
+"aA": "Å"
+"AA": "Å"
+
 # greek
 "gA": "Α"
 "ga": "α"
