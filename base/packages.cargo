@@ -7,3 +7,5 @@ tealdeer
 tokei
 wasm-pack
 sd
+create-tauri-app
+tauri-cli
