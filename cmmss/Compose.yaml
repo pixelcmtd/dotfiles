@@ -582,11 +582,14 @@
 "chiron": "⚷"  # CHIRON
 "lilith": "⚸"  # BLACK MOON LILITH
 "[key]": "⚿"  # SQUARED KEY
-"degree": "°"  # DEGREE SIGN
+"degr": "°"  # DEGREE SIGN
+"dgr": "°"  # DEGREE SIGN
 "degC": "℃"  # DEGREE CELSIUS
 "degc": "℃"  # DEGREE CELSIUS
+"dgc": "℃"  # DEGREE CELSIUS
 "degF": "℉"  # DEGREE FAHRENHEIT
 "degf": "℉"  # DEGREE FAHRENHEIT
+"dgf": "℉"  # DEGREE FAHRENHEIT
 "aries": "♈"  # ARIES
 "taurus": "♉"  # TAURUS
 "gemini": "♊"  # GEMINI
