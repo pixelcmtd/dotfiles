@@ -104,6 +104,7 @@
 "land": "∧"  # LOGICAL AND
 "lor": "∨"  # LOGICAL OR
 "xor": "⊻"  # XOR
+"not": "¬"  # NOT SIGN
 "-,": "¬"  # NOT SIGN
 "*o": "∘"  # RING OPERATOR (function composition)
 "*x": "⨯"  # CROSS PRODUCT
@@ -140,7 +141,7 @@
 "there4": "∴"  # THEREFORE
 "\".": "∵"  # BECAUSE
 "because": "∵"  # BECAUSE
-"%%": "‱"  # PER TEN THOUSAND (basis points)
+"%%": "‰"  # PER MILLE SIGN
 "/u": "µ"  # MICRO SIGN
 "-a": "ª"  # FEMININE ORDINAL INDICATOR
 "-o": "º"  # MASCULINE ORDINAL INDICATOR
