@@ -1,3 +1,4 @@
+[misc]
 disable = ["cargo", "vim", "node", "pnpm"]
 cleanup = true
 
