@@ -80,6 +80,9 @@ autocmd BufEnter *.swift map <Leader>x :w<CR>:!PATH=/usr/bin swift build<CR>
 autocmd BufEnter *.hs set makeprg=cabal
 autocmd BufEnter *.hs map <Leader>x :w<CR>:!cabal build<CR>
 
+autocmd BufEnter *.roc set makeprg=roc
+autocmd BufEnter *.roc map <Leader>x :w<CR>:!roc build<CR>
+
 autocmd BufEnter *.md map <Leader>t :w<CR>:!pandoc '%' -o `echo '%' \| sed 's/\.md$/.pdf/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.md$/.pdf/'`<CR>
 
 autocmd BufEnter *.tex map <Leader>t :w<CR>:!pdflatex '%' && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.tex$/.pdf/'`<CR>
