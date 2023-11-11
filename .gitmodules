@@ -92,3 +92,6 @@
 	path = base/.vim/pack/git-plugins/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
 	branch = release
+[submodule "base/.vim/pack/git-plugins/start/roc.vim"]
+	path = base/.vim/pack/git-plugins/start/roc.vim
+	url = https://github.com/ChrisWellsWood/roc.vim.git
