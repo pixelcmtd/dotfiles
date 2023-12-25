@@ -42,6 +42,7 @@ vnoremap > >gv
 
 map <Leader>f :Neoformat<CR>
 " TODO: config neoformat
+let g:neoformat_enabled_typescript = ['prettierd']
 
 autocmd BufEnter *.adn setfiletype clojure
 
