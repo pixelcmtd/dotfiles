@@ -19,9 +19,6 @@
 [submodule "vim/.vim/pack/git-plugins/start/guise.vim"]
 	path = base/.vim/pack/git-plugins/start/guise.vim
 	url = https://github.com/lambdalisue/guise.vim.git
-[submodule "vim/.vim/pack/git-plugins/start/editorconfig-vim"]
-	path = base/.vim/pack/git-plugins/start/editorconfig-vim
-	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/.vim/pack/git-plugins/start/lightline.vim"]
 	path = base/.vim/pack/git-plugins/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
@@ -95,3 +92,6 @@
 [submodule "base/.vim/pack/git-plugins/start/roc.vim"]
 	path = base/.vim/pack/git-plugins/start/roc.vim
 	url = https://github.com/ChrisWellsWood/roc.vim.git
+[submodule "base/.vim/pack/git-plugins/start/vim-sleuth"]
+	path = base/.vim/pack/git-plugins/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth
