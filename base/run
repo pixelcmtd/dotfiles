@@ -1,6 +1,8 @@
 #!/bin/sh
 set -uxe
 
+dart --disable-analytics
+
 go install golang.org/x/tools/cmd/goimports@latest
 xe -vf packages.cargo cargo install --bins
 pip3 install -U yt-dlp
