@@ -176,8 +176,6 @@
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
-			<key>Background Image Location</key>
-			<string>/Users/pixel/dotfiles/cmmss/meditate.25.png</string>
 			<key>Background Image Mode</key>
 			<integer>3</integer>
 			<key>Blend</key>
