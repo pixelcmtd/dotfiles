@@ -131,7 +131,7 @@ brew "jasper"
 brew "jemalloc"
 brew "jq"
 brew "json-c"
-brew "kak-lsp/kak-lsp/kak-lsp"
+brew "kak-lsp/kak-lsp/kakoune-lsp"
 brew "kakoune"
 brew "kotlin"
 brew "lame"
@@ -143,7 +143,6 @@ brew "little-cms2"
 brew "llvm"
 brew "llvm@13"
 brew "lmdb"
-brew "lsd"
 brew "lua"
 brew "luajit-openresty"
 brew "luarocks"
@@ -180,7 +179,6 @@ brew "npth"
 brew "nspr"
 brew "nss"
 brew "ocaml"
-brew "octave"
 brew "offlineimap"
 brew "oniguruma"
 brew "opencore-amr"
@@ -229,7 +227,6 @@ brew "screenresolution"
 brew "shared-mime-info"
 brew "shc"
 brew "shellcheck"
-brew "six"
 brew "sl"
 brew "smartmontools"
 brew "snappy"
@@ -291,13 +288,11 @@ brew "zstd"
 
 brew "pixelcmtd/extra/ffmpeg", args: ["with-aribb24", "with-fdk-aac", "with-game-music-emu", "with-jack", "with-libaribb24", "with-libbluray", "with-libbs2b", "with-libcaca", "with-libgsm", "with-libmodplug", "with-libopenmpt", "with-librist", "with-librsvg", "with-libsoxr", "with-libssh", "with-libvidstab", "with-libvmaf", "with-libxml2", "with-opencore-amr", "with-openh264", "with-openjpeg", "with-openssl", "with-rav1e", "with-rtmpdump", "with-rubberband", "with-speex", "with-srt", "with-svt-av1", "with-tesseract", "with-two-lame", "with-webp", "with-xvid", "with-zeromq", "with-zimg"]
 
-brew "kde-mac/kde/atcore"
 brew "kde-mac/kde/kcalc"
 brew "kde-mac/kde/kdiagram"
 brew "kde-mac/kde/kdialog"
 brew "kde-mac/kde/kdiff3"
 brew "kde-mac/kde/kimap"
-brew "kde-mac/kde/kio-extras"
 brew "kde-mac/kde/kmime"
 brew "kde-mac/kde/kolourpaint"
 brew "kde-mac/kde/konsole"
@@ -305,13 +300,7 @@ brew "kde-mac/kde/konversation"
 brew "kde-mac/kde/krename"
 brew "kde-mac/kde/krusader"
 brew "kde-mac/kde/ksysguard"
-brew "kde-mac/kde/libalkimia"
-brew "kde-mac/kde/libkexiv2"
-brew "kde-mac/kde/libkomparediff2"
-brew "kde-mac/kde/libksysguard"
 brew "kde-mac/kde/lokalize"
-brew "kde-mac/kde/phonon"
-brew "kde-mac/kde/poxml"
 cask "kde-mac/kde/kdeconnect"
 
 cask "1password"
@@ -328,9 +317,7 @@ cask "blackhole-2ch"
 cask "blender"
 cask "brave-browser"
 cask "burp-suite"
-cask "cheatsheet"
 cask "chromium"
-cask "cider"
 cask "discord"
 cask "docker"
 cask "easyeda"
@@ -338,8 +325,6 @@ cask "eclipse-java"
 cask "element"
 cask "elgato-control-center"
 cask "elgato-game-capture-hd"
-cask "elgato-stream-deck"
-cask "emacs"
 cask "emojipedia"
 cask "epic-games"
 cask "firefox"
@@ -361,19 +346,16 @@ cask "macs-fan-control"
 cask "mactex"
 cask "macwhisper"
 cask "mcjack123/craftospc/craftos-pc"
-cask "minecraft"
 cask "monitorcontrol"
 cask "mpv"
 cask "mumble"
 cask "musescore"
 cask "native-access"
 cask "obs"
-cask "obsidian"
-cask "openscad-snapshot"
+cask "openscad@snapshot"
 cask "orion"
 cask "parallels"
 cask "parallels-virtualization-sdk"
-cask "penc"
 cask "pixelcmtd/extra/auto-tune-access"
 cask "pixelcmtd/extra/dfx-geometer"
 cask "prismlauncher"
@@ -381,7 +363,6 @@ cask "qflipper"
 cask "rar"
 cask "raspberry-pi-imager"
 cask "scout"
-cask "signal"
 cask "softube-central"
 cask "spotify"
 cask "steam"
@@ -397,27 +378,18 @@ cask "utm"
 cask "vimr"
 cask "vlc"
 cask "vscodium"
-cask "waterfox"
 cask "wireshark"
 cask "xonotic"
 cask "xquartz"
 
-mas "Apple Configurator", id: 1037126344
 mas "WeTransfer", id: 1114922065
 mas "GeoGebra Graphing Calculator", id: 1294018688
-mas "Microsoft Remote Desktop", id: 1295203466
-mas "Drafts", id: 1435957248
 mas "Dark Reader for Safari", id: 1438243180
 mas "iStatistica Pro", id: 1447778660
-mas "Mastonaut", id: 1450757574
 mas "Transporter", id: 1450874784
 mas "Wayback Machine", id: 1472432422
 mas "Yubico Authenticator", id: 1497506650
-mas "Bluetooth Inspector", id: 1509085044
-mas "JoyKeyMapper", id: 1511416593
-mas "Boop", id: 1518425043
 mas "Refined GitHub", id: 1519867270
-mas "Displaperture", id: 1543920362
 mas "Hush", id: 1544743900
 mas "Color Picker", id: 1545870783
 mas "1Password for Safari", id: 1569813296
@@ -426,11 +398,7 @@ mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
 mas "Final Cut Pro", id: 424389933
 mas "Compressor", id: 424390742
-mas "Disk Speed Test", id: 425264550
 mas "Magnet", id: 441258766
 mas "Xcode", id: 497799835
-mas "Logic Pro", id: 634148309
-mas "Simplenote", id: 692867256
 mas "Microsoft OneNote", id: 784801555
-mas "Shazam", id: 897118787
 mas "TickTick", id: 966085870
