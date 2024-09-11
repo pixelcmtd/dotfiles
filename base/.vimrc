@@ -84,6 +84,13 @@ autocmd BufEnter *.hs map <Leader>x :w<CR>:!cabal build<CR>
 autocmd BufEnter *.roc set makeprg=roc
 autocmd BufEnter *.roc map <Leader>x :w<CR>:!roc build<CR>
 
+autocmd BufEnter *.js map <Leader>x :w<CR>:!npm run build<CR>
+autocmd BufEnter *.js map <Leader>t :w<CR>:!npm run test<CR>
+autocmd BufEnter *.js map <Leader>i :w<CR>:!npm install 
+autocmd BufEnter *.ts map <Leader>x :w<CR>:!npm run build<CR>
+autocmd BufEnter *.ts map <Leader>t :w<CR>:!npm run test<CR>
+autocmd BufEnter *.ts map <Leader>i :w<CR>:!npm install 
+
 autocmd BufEnter *.md map <Leader>t :w<CR>:!pandoc '%' -o `echo '%' \| sed 's/\.md$/.pdf/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.md$/.pdf/'`<CR>
 
 autocmd BufEnter *.tex map <Leader>t :w<CR>:!pdflatex '%' && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.tex$/.pdf/'`<CR>
