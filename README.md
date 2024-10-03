@@ -15,7 +15,7 @@ curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s caamo
 ## chrissx Media macOS Setup Scripts
 
 A set of scripts for easily installing a lot of packages and configuration,
-primarily on "Apple silicon" (ARM), currently macOS 13 Ventura.
+primarily on "Apple silicon" (ARM), currently macOS 15 Sequoia.
 
 We won't bother to support older macOS versions, because there is virtually no
 reason to not use the latest one. If you want to use it on another version,
