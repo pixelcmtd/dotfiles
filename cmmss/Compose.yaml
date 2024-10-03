@@ -84,10 +84,12 @@
 ">>>": "⋙"  # VERY MUCH GREATER-THAN
 "in": "∈"  # ELEMENT OF
 "!in": "∉"  # NOT AN ELEMENT OF
+"/in": "∉"
 "ni": "∋"  # CONTAINS AS MEMBER
 "/ni": "∌"  # DOES NOT CONTAIN AS MEMBER
 "~=": "≈"
 "approx": "≈"
+"equiv": "≙"
 "=?": "≟"  # QUESTIONED EQUAL TO
 "=def": "≝"  # EQUAL TO BY DEFINITION
 "def=": "≝"  # EQUAL TO BY DEFINITION
@@ -125,7 +127,7 @@
 "/EE": "∄"  # THERE DOES NOT EXIST
 "AA": "∀"  # FOR ALL
 "QED": "∎"  # END OF PROOF
-"inf": "∞"  # INFINITY
+"Inf": "∞"  # INFINITY
 "aleph": "ℵ"  # ALEF SYMBOL
 "alep0": "ℵ₀"  # ALEF Null
 "alep1": "ℵ₁"  # ALEF One
