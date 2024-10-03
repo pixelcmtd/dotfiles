@@ -11,7 +11,6 @@ tap "mcjack123/craftospc"
 tap "natesales/repo", "https://github.com/natesales/repo.git"
 tap "pixelcmtd/extra"
 
-brew "pixelcmtd/extra/x265", head: true
 brew "ant"
 brew "argon2"
 brew "asciidoctor"
@@ -286,7 +285,7 @@ brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "zstd"
 
-brew "pixelcmtd/extra/ffmpeg", args: ["with-aribb24", "with-fdk-aac", "with-game-music-emu", "with-jack", "with-libaribb24", "with-libbluray", "with-libbs2b", "with-libcaca", "with-libgsm", "with-libmodplug", "with-libopenmpt", "with-librist", "with-librsvg", "with-libsoxr", "with-libssh", "with-libvidstab", "with-libvmaf", "with-libxml2", "with-opencore-amr", "with-openh264", "with-openjpeg", "with-openssl", "with-rav1e", "with-rtmpdump", "with-rubberband", "with-speex", "with-srt", "with-svt-av1", "with-tesseract", "with-two-lame", "with-webp", "with-xvid", "with-zeromq", "with-zimg"]
+brew "ffmpeg"
 
 brew "kde-mac/kde/kcalc"
 brew "kde-mac/kde/kdiagram"
@@ -334,7 +333,7 @@ cask "ghidra"
 cask "gimp"
 cask "gpg-suite"
 cask "graphiql"
-cask "homebrew/cask-versions/wine-staging"
+cask "wine@staging"
 cask "iina"
 cask "ilok-license-manager"
 cask "inkscape"
