@@ -212,7 +212,7 @@ alias gck='git checkout'
 alias diff='git diff --no-index'
 alias rr='curl -sL http://bit.ly/10hA8iC | bash'
 alias tmp='pushd ; cd $(mktemp -d)'
-alias pwn='docker run --rm -v$PWD:/pwd -it chrissx/pwn'
+alias pwn='docker run --rm -v$PWD:/pwd -it chrissx/pwn:latest'
 
 ght() (git tag "$@" && git push origin --tags)
 glcp() (git pull && git commit "$@" && git push)
