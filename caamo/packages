@@ -63,7 +63,7 @@ npm
 obs-studio
 openscad
 pandoc
-pfetch
+pfetch-rs
 pnpm
 progress
 qrencode
