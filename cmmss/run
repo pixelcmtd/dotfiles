@@ -31,9 +31,11 @@ brew analytics off
 
 brew bundle install -v
 rustup-init --default-toolchain stable --profile default -vy
-pip3 install --user gen-compose
 
-./compile_compose.sh
+pip3 install --user gen-compose
+mkdir -p ~/Library/KeyBindings
+gen-compose Compose.yaml > ~/Library/KeyBindings/DefaultKeyBinding.dict
+
 defaults write .GlobalPreferences AppleICUNumberSymbols '{ 0 = "."; 1 = " "; 10 = "."; 17 = " "; }'
 defaults write .GlobalPreferences AppleLanguages '("en-US", "de-DE")'
 defaults write .GlobalPreferences AppleLocale en_DE

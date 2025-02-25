@@ -322,12 +322,6 @@
 "2!": "‼"  # DOUBLE EXCLAMATION MARK
 "2:": "∷"  # PROPORTION -- not strictly 2 times COLON
 ";<": "⁏"  # REVERSED SEMICOLON
-"<3": "♥"  # BLACK HEART SUIT
-"o8": "♣"  # BLACK CLUB SUIT
-"c3": "♣"  # BLACK CLUB SUIT
-"<>": "♢"  # WHITE DIAMOND SUIT
-"3-": "♠"  # BLACK SPADE SUIT
-"E>": "♡"  # WHITE HEART SUIT
 "shmrck": "☘"  # SHAMROCK
 "shamro": "☘"  # SHAMROCK
 "pc": "☮"  # PEACE SYMBOL
@@ -727,3 +721,10 @@
 
 "'E": "Ë"
 "'e": "ë"
+
+# semi-temporary emoji thingy
+"ple": "🥺"
+"pnt": "👉👈"
+"pnk": "🩷"
+"kss": "😘"
+"heh": "🤭"
