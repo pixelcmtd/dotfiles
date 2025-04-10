@@ -18,13 +18,9 @@ set mouse=a
 set spelllang=de,en
 set notimeout ttimeout ttimeoutlen=5
 
-exec system("mkdir -p ~/.vim/swapfiles")
+exec system("mkdir -p ~/.vim/swapfiles ~/.vim/backupfiles ~/.vim/undofiles")
 set dir=~/.vim/swapfiles
-
-exec system("mkdir -p ~/.vim/backupfiles")
 set bdir=~/.vim/backupfiles
-
-exec system("mkdir -p ~/.vim/undofiles")
 set udir=~/.vim/undofiles
 
 set noshowmode
