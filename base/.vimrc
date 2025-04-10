@@ -94,10 +94,10 @@ autocmd BufEnter *.tex map <Leader>t :w<CR>:!pdflatex '%' && `type xdg-open >/de
 autocmd BufEnter *.scad map <Leader>t :w<CR>:!OPENSCADPATH=lib openscad '%' -o `echo '%' \| sed 's/\.scad$/.stl/'` && `type xdg-open >/dev/null && echo xdg-open \|\| echo open` `echo '%' \| sed 's/\.scad$/.stl/'`<CR>
 
 autocmd BufEnter *.svg map <Leader>t :w<CR>:!`type xdg-open >/dev/null && echo xdg-open \|\| echo open` '%'<CR>
-" TODO: slim
 
 " writing setup (named after ZERM)
-map <Leader>z :set spell<CR>:set colorcolumn=0<CR><C-L>
+map <Leader>z :set spell<CR><C-L>
+map <Leader>Z :set nospell<CR><C-L>
 
 map <Leader>T :exe "Tldr" input("Page: ")<CR>
 map <Leader>F :Telescope find_files<CR><C-L>
