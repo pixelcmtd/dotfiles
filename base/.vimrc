@@ -105,6 +105,9 @@ autocmd BufEnter *.svg map <Leader>t :w<CR>:!`type xdg-open >/dev/null && echo x
 map <Leader>z :set spell<CR><C-L>
 map <Leader>Z :set nospell<CR><C-L>
 
+autocmd FileType gitcommit :set spell
+autocmd FileType markdown :set spell
+
 map <Leader>T :exe "Tldr" input("Page: ")<CR>
 map <Leader>F :Telescope find_files<CR><C-L>
 
