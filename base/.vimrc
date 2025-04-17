@@ -118,14 +118,17 @@ map <Leader>gc :Git commit -v<CR>
 map <Leader>gp :Git push -v<CR>
 map <Leader>gl :Git pull<CR>
 map <Leader>gd :Git diff<CR>
+map <Leader>gD :Gvdiffsplit<CR>
 map <Leader>gi :Git init<CR>
 map <Leader>gs :Git status<CR>
 map <Leader>gad :Git add -v 
 map <Leader>gaa :Git add -vA<CR>
 map <Leader>gap :Git add -vp<CR>
+map <Leader>gbr :GBrowse<CR>
 
 map <Leader>bn :bnext<CR><C-L>
 map <Leader>bp :bprevious<CR><C-L>
+map <Leader>bk :bdelete<CR><C-L>
 
 ":winc l<CR>
 map <Leader>n :NERDTree<CR><C-L>
