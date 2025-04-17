@@ -118,9 +118,6 @@ map <Leader>bp :bprevious<CR><C-L>
 ":winc l<CR>
 map <Leader>n :NERDTree<CR><C-L>
 
-imap <C-a> <Home>
-imap <C-e> <End>
-imap <C-u> <Esc>cc
 imap <C-k> <Esc>lC
 
 vmap J :m >+1<CR>gv=gv
