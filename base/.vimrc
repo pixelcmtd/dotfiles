@@ -6,14 +6,12 @@ set laststatus=2
 set number relativenumber
 set so=999
 setglobal fileencoding=utf-8
-set encoding=utf-8 termencoding=utf-8 fileencodings=utf-8
 set wildmenu wildignore=*.o,*.a,*.la,*.lo,*.swp,.svn,.git
 set showcmd
 set hlsearch ignorecase smartcase
 set backspace=indent,eol,start
 set shiftwidth=8 softtabstop=8 expandtab autoindent
 set confirm
-set visualbell t_vb= t_Co=256
 set mouse=a
 set spelllang=de,en
 set notimeout ttimeout ttimeoutlen=5
@@ -95,7 +93,6 @@ autocmd BufEnter *.scad map <Leader>t :w<CR>:!OPENSCADPATH=lib openscad '%' -o `
 
 autocmd BufEnter *.svg map <Leader>t :w<CR>:!`type xdg-open >/dev/null && echo xdg-open \|\| echo open` '%'<CR>
 
-" writing setup (named after ZERM)
 map <Leader>z :set spell<CR><C-L>
 map <Leader>Z :set nospell<CR><C-L>
 
