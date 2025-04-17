@@ -4,12 +4,12 @@ syntax on
 filetype plugin indent on
 set laststatus=2
 set number relativenumber
-set so=999
+set scrolloff=999 sidescrolloff=20
 setglobal fileencoding=utf-8
 set wildmenu wildignore=*.o,*.a,*.la,*.lo,*.swp,.svn,.git
 set showcmd
 set hlsearch ignorecase smartcase
-set backspace=indent,eol,start
+set backspace=indent,eol,start whichwrap=b,s,<,>
 set shiftwidth=8 softtabstop=8 expandtab autoindent
 set confirm
 set mouse=a
