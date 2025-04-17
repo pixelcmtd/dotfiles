@@ -22,7 +22,16 @@ set bdir=~/.vim/backupfiles
 set udir=~/.vim/undofiles
 
 set noshowmode
-let g:lightline = {'colorscheme': 'powerlineish'}
+let g:lightline = {
+\       'colorscheme': 'powerlineish',
+\       'active': {
+\               'left': [ [ 'mode', 'paste' ],
+\                       [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
+\       },
+\       'component_function': {
+\               'gitbranch': 'FugitiveHead',
+\       },
+\}
 
 colorscheme pitch_black
 
