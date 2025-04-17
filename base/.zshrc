@@ -208,6 +208,7 @@ alias gs='git status'
 alias gsh='git show'
 alias gst='git stash --'
 alias gck='git checkout'
+alias gsd='(git -c color.status=always status && echo -e "\n" && git diff --color) | less -R'
 
 alias diff='git diff --no-index'
 alias rr='curl -sL http://bit.ly/10hA8iC | bash'
