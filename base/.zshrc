@@ -1,5 +1,6 @@
 #!/bin/zsh
 source ~/.env
+export ASTRO_TELEMETRY_DISABLED=1
 
 autoload -U compaudit compinit
 compinit -u -C -d "$HOME/.zcompdump-$ZSH_VERSION"
