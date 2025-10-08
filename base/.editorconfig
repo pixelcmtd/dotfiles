@@ -10,8 +10,12 @@ insert_final_newline = true
 [Makefile]
 indent_style = tab
 
+[*.go]
+indent_style = tab
+tab_width = 4
+
 [*.{js,ts,cl,lisp,clj,scm,adscript,carp,dart,yml,yaml,scad,dot}]
 tab_width = 2
 
-[*.{htm,html,css,py,rs,hs,swift,go}]
+[*.{htm,html,css,py,rs,hs,swift}]
 tab_width = 4
