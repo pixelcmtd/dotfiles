@@ -55,6 +55,10 @@ let g:ale_linters = {
 \   'c': ['clangd'],
 \}
 
+let g:vmt_fence_text = "toc"
+let g:vmt_fence_closing_text = "toc"
+let g:vmt_list_item_char = "-"
+
 map <Leader>c "+y
 map <Leader>v "+P
 
