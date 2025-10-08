@@ -1,5 +1,5 @@
 [misc]
-disable = ["cargo", "vim", "node", "pnpm", "mas"]
+disable = ["cargo", "vim", "node", "pnpm", "yarn", "pipx", "github_cli_extensions", "mas", "system"]
 cleanup = true
 
 [git]
