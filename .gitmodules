@@ -95,3 +95,6 @@
 [submodule "base/.vim/pack/git-plugins/start/vim-rsi"]
 	path = base/.vim/pack/git-plugins/start/vim-rsi
 	url = https://github.com/tpope/vim-rsi.git
+[submodule "base/.vim/pack/git-plugins/start/vim-markdown-toc"]
+	path = base/.vim/pack/git-plugins/start/vim-markdown-toc
+	url = https://github.com/mzlogin/vim-markdown-toc.git
