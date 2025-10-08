@@ -5,6 +5,9 @@ installing all of the actual packages.
 
 ## chrissx Arch And Manjaro Os
 
+> [!WARNING]
+> CAAMO has been deprecated and will be removed/replaced soon.
+
 A very thin layer on top of your preferred Arch-based install. Mainly developed
 for and tested on Manjaro KDE.
 
