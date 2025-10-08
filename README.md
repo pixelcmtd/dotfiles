@@ -37,7 +37,7 @@ also untested, but it _should_ “just work”.
 ### Other software (esp. audio plugins)
 
 A lot of software, especially audio plugins, isn't in Homebrew, or otherwise
-easily automateable.
+easily automatable.
 
 - [TinkerTool](https://www.bresink.com/osx/0TinkerTool/download.php)
 - [XLN](https://www.xlnaudio.com/install)
@@ -49,3 +49,9 @@ easily automateable.
 - Softube Central (installed through Homebrew)
 - [GVST](https://www.gvst.co.uk/downloads.htm)
 - [Melodyne](https://services.celemony.com/cgi-bin/WebObjects/LicenseApp.woa/wa/LoginDA)
+
+## Updating
+
+Using `topgrade` to update all installed packages is recommended. To keep
+configurations in sync, `git pull && ./run base` should usually do the trick. In
+some cases, manual patches might be required after major changes.
