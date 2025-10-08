@@ -29,7 +29,7 @@ version, patching it should be pretty easy though.
 > to very that it actually works, and some hacks specific to Intel macOS will be
 > removed in the future.
 
-> [!INFO]
+> [!NOTE]
 > CMMSS should work on macOS 26, but it is currently untested.
 
 - Install [XCode](https://apps.apple.com/de/app/xcode/id497799835) from the App
