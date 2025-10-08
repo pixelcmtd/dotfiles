@@ -275,18 +275,6 @@ brew "zstd"
 
 brew "ffmpeg"
 
-brew "kde-mac/kde/kcalc"
-brew "kde-mac/kde/kdiagram"
-brew "kde-mac/kde/kdialog"
-brew "kde-mac/kde/kdiff3"
-brew "kde-mac/kde/kimap"
-brew "kde-mac/kde/kmime"
-brew "kde-mac/kde/kolourpaint"
-brew "kde-mac/kde/konsole"
-brew "kde-mac/kde/konversation"
-brew "kde-mac/kde/krename"
-brew "kde-mac/kde/lokalize"
-
 cask "1password"
 cask "1password-cli"
 cask "affinity-designer"
