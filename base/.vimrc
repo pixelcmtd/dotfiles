@@ -50,6 +50,11 @@ let g:neoformat_enabled_typescript = ['prettierd']
 
 autocmd BufEnter *.adn setfiletype clojure
 
+let g:ale_linters = {
+\   'cpp': ['clangd'],
+\   'c': ['clangd'],
+\}
+
 map <Leader>c "+y
 map <Leader>v "+P
 
