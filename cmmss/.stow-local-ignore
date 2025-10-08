@@ -3,11 +3,6 @@ Compose.yaml
 Brewfile
 Brewfile.lock.json
 run
-Makefile
 theos
-kma
-kma.c
-kma.x86
-kma.arm
 com.googlecode.iterm2.plist
 .gitignore
