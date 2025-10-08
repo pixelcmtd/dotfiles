@@ -21,9 +21,16 @@ A set of scripts for easily installing a lot of packages and configuration,
 primarily on "Apple silicon" (ARM), currently macOS 15 Sequoia.
 
 We won't bother to support older macOS versions, because there is virtually no
-reason to not use the latest one. If you want to use it on another version,
-patching it should be pretty easy though. Using CMMSS on Intel-based Macs is
-also untested, but it _should_ “just work”.
+reason to not use an up-to-date version. If you want to use it on another
+version, patching it should be pretty easy though.
+
+> [!WARNING]
+> Using CMMSS on Intel-based Macs is deprecated. There is currently no easy way
+> to very that it actually works, and some hacks specific to Intel macOS will be
+> removed in the future.
+
+> [!INFO]
+> CMMSS should work on macOS 26, but it is currently untested.
 
 - Install [XCode](https://apps.apple.com/de/app/xcode/id497799835) from the App
   Store (`open -a "App Store" https://apps.apple.com/de/app/xcode/id497799835`)
