@@ -1,9 +1,18 @@
 # dotfiles
 
+<!-- toc GFM -->
+
+- [**c**hrissx **A**rch **a**nd **M**anjaro **O**S (`caamo`)](#chrissx-arch-and-manjaro-os-caamo)
+- [**c**hrissx **M**edia **m**acOS **S**etup **S**cripts (`cmmss`)](#chrissx-media-macos-setup-scripts-cmmss)
+  - [Other software (esp. audio plugins)](#other-software-esp-audio-plugins)
+- [Updating](#updating)
+
+<!-- toc -->
+
 A bunch of `dotfiles` and scripts for installing them with GNU Stow, as well as
 installing all of the actual packages.
 
-## chrissx Arch And Manjaro Os
+## **c**hrissx **A**rch **a**nd **M**anjaro **O**S (`caamo`)
 
 > [!WARNING]
 > CAAMO has been deprecated and will be removed/replaced soon.
@@ -15,7 +24,7 @@ for and tested on Manjaro KDE.
 curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s caamo
 ```
 
-## chrissx Media macOS Setup Scripts
+## **c**hrissx **M**edia **m**acOS **S**etup **S**cripts (`cmmss`)
 
 A set of scripts for easily installing a lot of packages and configuration,
 primarily on "Apple silicon" (ARM), currently macOS 15 Sequoia.
@@ -44,7 +53,7 @@ version, patching it should be pretty easy though.
 ### Other software (esp. audio plugins)
 
 A lot of software, especially audio plugins, isn't in Homebrew, or otherwise
-easily automatable.
+easily automatable. This may be seen as a long to-do list.
 
 - [TinkerTool](https://www.bresink.com/osx/0TinkerTool/download.php)
 - [XLN](https://www.xlnaudio.com/install)
@@ -60,5 +69,6 @@ easily automatable.
 ## Updating
 
 Using `topgrade` to update all installed packages is recommended. To keep
-configurations in sync, `git pull && ./run base` should usually do the trick. In
-some cases, manual patches might be required after major changes.
+configurations in sync, `git pull && ./run base` (maybe `./run cmmss`,
+`./run caamo`, etc) should usually do the trick. In some cases, manual patches
+might be required after major changes.
