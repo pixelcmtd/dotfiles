@@ -1,16 +1,17 @@
 # dotfiles
 
+A bunch of `dotfiles` and scripts for installing them with GNU Stow, as well as
+installing all of the actual packages.
+
 <!-- toc GFM -->
 
 - [**c**hrissx **A**rch **a**nd **M**anjaro **O**S (`caamo`)](#chrissx-arch-and-manjaro-os-caamo)
 - [**c**hrissx **M**edia **m**acOS **S**etup **S**cripts (`cmmss`)](#chrissx-media-macos-setup-scripts-cmmss)
   - [Other software (esp. audio plugins)](#other-software-esp-audio-plugins)
+- [`base`](#base)
 - [Updating](#updating)
 
 <!-- toc -->
-
-A bunch of `dotfiles` and scripts for installing them with GNU Stow, as well as
-installing all of the actual packages.
 
 ## **c**hrissx **A**rch **a**nd **M**anjaro **O**S (`caamo`)
 
@@ -65,6 +66,20 @@ easily automatable. This may be seen as a long to-do list.
 - Softube Central (installed through Homebrew)
 - [GVST](https://www.gvst.co.uk/downloads.htm)
 - [Melodyne](https://services.celemony.com/cgi-bin/WebObjects/LicenseApp.woa/wa/LoginDA)
+
+## `base`
+
+> [!NOTE]
+> `base` is not intended for individual install, but for installation through
+> one of the config systems listed above.
+
+Finishes up the install, specifically the following steps:
+
+- disable dart analytics
+- install `goimports`
+- install [a few cargo packages](base/packages.cargo)
+- install `fvm`
+- clone a big list of repos into `~/src`
 
 ## Updating
 
