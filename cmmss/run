@@ -3,13 +3,13 @@ set -ue
 
 xcode-select -p >/dev/null 2>/dev/null || {
         xcode-select --install
-        read -rp "A window that lets you install XCode CLI tools should have opened.
+        read -r "?A window that lets you install XCode CLI tools should have opened.
 If you've closed it, run \`xcode-select --install\` to reopen it.
 Please install the XCode CLI tools and then press enter."
 }
 
 [ "$(arch)" != arm64 ] || pgrep -q oahd || {
-        read -rp 'Detected an ARM CPU, please press enter to agree to the Rosetta 2 license.
+        read -r '?Detected an ARM CPU, please press enter to agree to the Rosetta 2 license.
 To disagree, press ctrl-c.'
         sudo softwareupdate --install-rosetta --agree-to-license
 }
