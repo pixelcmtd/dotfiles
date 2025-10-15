@@ -235,7 +235,6 @@ cask "eclipse-java"
 cask "elgato-control-center"
 cask "ferdium"
 cask "firefox"
-cask "fl-studio"
 cask "freecad"
 cask "ghidra"
 cask "gimp"
@@ -288,12 +287,7 @@ mas "Refined GitHub", id: 1519867270
 mas "Hush", id: 1544743900
 mas "Color Picker", id: 1545870783
 mas "1Password for Safari", id: 1569813296
-mas "Keynote", id: 409183694
-mas "Pages", id: 409201541
-mas "Numbers", id: 409203825
 mas "Final Cut Pro", id: 424389933
-mas "Compressor", id: 424390742
 mas "Magnet", id: 441258766
-mas "Xcode", id: 497799835
 mas "Microsoft OneNote", id: 784801555
 mas "TickTick", id: 966085870
