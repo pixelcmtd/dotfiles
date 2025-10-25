@@ -1,16 +1,27 @@
 #!/bin/sh
 set -uxe
 
-dart --disable-analytics
+missing() {
+        for x in "$@" ; do
+                if ! command -v "$x" >/dev/null ; then
+                        return 0
+                fi
+        done
+        return 1
+}
 
-go install golang.org/x/tools/cmd/goimports@latest
-xe -vf packages.cargo cargo install --bins
-dart pub global activate fvm
+missing dart || dart --disable-analytics
 
-gh api /user/memberships/orgs --jq 'map(.organization.login) + ["'"$(gh api /user --jq .login)"'", "dart-lang"] | join("\n")' | \
+missing go || go install golang.org/x/tools/cmd/goimports@latest
+missing xe cargo || xe -vf packages.cargo cargo install --bins
+missing dart || {
+        dart pub global activate fvm
+}
+
+missing gh xe || gh api /user/memberships/orgs --jq 'map(.organization.login) + ["'"$(gh api /user --jq .login)"'", "dart-lang"] | join("\n")' | \
         grep -Ev 'EpicGames|tldr-pages' | \
         # TODO: apple things
         xe -j0 -- gh repo list -L 1000 --no-archived --json owner,name --jq 'map(.owner.login + "/" + .name) | map([., .]) | flatten + ["cplusplus/draft","c++std", "carp-lang/Carp","Carp", "https://git.ffmpeg.org/ffmpeg.git","ffmpeg"] | join("\n")' | \
-        xe -N2 -j0 sh -c '[ -d ~/src/$2 ] || echo "gh repo clone $1 ~/src/$2 -- --recurse-submodules -qv"' -s | \
+        xe -N2 sh -c '[ -d ~/src/$2 ] || echo "gh repo clone $1 ~/src/$2 -- --recurse-submodules -qv"' -s | \
         sort | uniq | \
         xe -vj10 sh -c
