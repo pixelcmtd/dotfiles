@@ -30,17 +30,12 @@ curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s caamo
 A set of scripts for easily installing a lot of packages and configuration,
 primarily on "Apple silicon" (ARM), currently macOS 15 Sequoia.
 
-We won't bother to support older macOS versions, because there is virtually no
-reason to not use an up-to-date version. If you want to use it on another
-version, patching it should be pretty easy though.
-
 > [!WARNING]
-> Using CMMSS on Intel-based Macs is deprecated. There is currently no easy way
-> to very that it actually works, and some hacks specific to Intel macOS will be
-> removed in the future.
+> Older macOS versions, as well as Intel-based versions are unsupported. Expect
+> to run into issues, patching them should be pretty easy though.
 
 > [!NOTE]
-> CMMSS should work on macOS 26, but it is currently untested.
+> CMMSS should work on macOS 26, but it is currently also untested.
 
 - Install [XCode](https://apps.apple.com/de/app/xcode/id497799835) from the App
   Store (`open -a "App Store" https://apps.apple.com/de/app/xcode/id497799835`)
