@@ -37,8 +37,10 @@ primarily on "Apple silicon" (ARM), currently macOS 15 Sequoia.
 > [!NOTE]
 > CMMSS should work on macOS 26, but it is currently also untested.
 
+- Grant Terminal Full Disk Access (in the System Settings)
 - Install [XCode](https://apps.apple.com/de/app/xcode/id497799835) from the App
   Store (`open -a "App Store" https://apps.apple.com/de/app/xcode/id497799835`)
+  or [Apple Developer page](https://developer.apple.com/download/all/?q=Xcode)
 - Run `sudo xcodebuild -license` and agree to the license
 - Run
   `curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s cmmss`
