@@ -72,10 +72,13 @@ easily automatable. This may be seen as a long to-do list.
 
 Finishes up the install, specifically the following steps:
 
-- disable dart analytics
-- install `goimports`
+- disable brew analytics
+- install [many homebrew formulae](base/Brewfile)
+- install rust stable from `rustup`
 - install [a few cargo packages](base/packages.cargo)
-- install `fvm`
+- install `goimports`
+- disable dart analytics
+- install flutter stable from `fvm`
 - clone a big list of repos into `~/src`
 
 ## Updating
