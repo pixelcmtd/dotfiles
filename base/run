@@ -10,6 +10,10 @@ missing() {
         return 1
 }
 
+missing brew || {
+        brew analytics off
+        brew bundle install -v
+}
 
 missing rustup-init || rustup-init --default-toolchain stable --profile default -vy
 missing xe cargo || xe -vf packages.cargo cargo install --bins

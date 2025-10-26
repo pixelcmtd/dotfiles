@@ -24,13 +24,11 @@ sudo systemsetup -setremotelogin On
 
 source .env
 
+# TODO: consider pkg
 [[ -d /opt/homebrew && "$(arch)" = arm64 ]] || \
         [[ -f /usr/local/bin/brew && "$(arch)" = x86_64 ]] || \
         curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
-brew analytics off
-
 brew bundle install -v
-rustup-init --default-toolchain stable --profile default -vy
 
 pip3 install --user gen-compose
 mkdir -p ~/Library/KeyBindings
