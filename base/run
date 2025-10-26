@@ -10,14 +10,14 @@ missing() {
         return 1
 }
 
-missing dart || dart --disable-analytics
 
 missing rustup-init || rustup-init --default-toolchain stable --profile default -vy
-missing go || go install golang.org/x/tools/cmd/goimports@latest
 missing xe cargo || xe -vf packages.cargo cargo install --bins
+missing go || go install golang.org/x/tools/cmd/goimports@latest
 missing dart || {
+        dart --disable-analytics
         dart pub global activate fvm
-        fvm install stable
+        dart pub global run fvm:main install stable
 }
 
 missing gh xe || gh api /user/memberships/orgs --jq 'map(.organization.login) + ["'"$(gh api /user --jq .login)"'", "dart-lang"] | join("\n")' | \
