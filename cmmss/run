@@ -1,4 +1,5 @@
 #!/bin/zsh
+source .env
 set -ue
 
 xcode-select -p >/dev/null 2>/dev/null || {
@@ -21,8 +22,6 @@ sudo systemsetup -setdisplaysleep 10
 sudo systemsetup -setusingnetworktime On
 sudo systemsetup -setallowpowerbuttontosleepcomputer On
 sudo systemsetup -setremotelogin On
-
-source .env
 
 # TODO: consider pkg
 [[ -d /opt/homebrew && "$(arch)" = arm64 ]] || \
