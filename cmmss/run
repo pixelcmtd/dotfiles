@@ -29,7 +29,7 @@ sudo systemsetup -setremotelogin On
         curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 brew bundle install -v
 
-pip3 install --user gen-compose
+pip3 install --user pyyaml==5.3.1 gen-compose
 mkdir -p ~/Library/KeyBindings
 gen-compose Compose.yaml > ~/Library/KeyBindings/DefaultKeyBinding.dict
 
