@@ -14,8 +14,8 @@ indent_style = tab
 indent_style = tab
 tab_width = 4
 
-[*.{js,ts,cl,lisp,clj,scm,adscript,carp,dart,yml,yaml,scad,dot}]
+[*.{js,ts,cl,lisp,clj,scm,adscript,carp,dart,yml,yaml,scad,dot,hs}]
 tab_width = 2
 
-[*.{htm,html,css,py,rs,hs,swift}]
+[*.{htm,html,css,py,rs,swift}]
 tab_width = 4
