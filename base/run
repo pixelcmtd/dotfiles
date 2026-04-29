@@ -15,9 +15,7 @@ missing brew || {
         brew bundle install -v
 }
 
-missing rustup-init || rustup-init --default-toolchain stable --profile default -vy
-missing xe cargo || xe -vf packages.cargo cargo install --bins
-missing go || go install golang.org/x/tools/cmd/goimports@latest
+missing rustup-init || rustup-init --default-toolchain stable --profile default -y
 missing dart || {
         dart --disable-analytics
         dart pub global activate fvm
