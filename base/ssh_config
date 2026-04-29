@@ -1,0 +1,19 @@
+AddKeysToAgent ask
+NoHostAuthenticationForLocalhost yes
+VerifyHostKeyDNS ask
+
+Host ruby
+	Hostname ruby.chrissx.de
+	User root
+
+Host op
+	Hostname op.chrissx.de
+	User pixel
+
+Host peg
+	Hostname rosenhof.chrissx.de
+	User pixel
+
+Host rotmain
+	Hostname rotmain.chrissx.de
+	User chris
