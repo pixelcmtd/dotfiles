@@ -155,6 +155,7 @@ zlibd() (printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" | cat - "$@" | gzip -dc)
 alias v="$VISUAL"
 alias V="sudo $EDITOR"
 alias mv="mv -i"
+alias b="bat -P --style=plain"
 
 alias m='make -j$(nproc)'
 alias mi='make -j$(nproc) install'
