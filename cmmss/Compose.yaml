@@ -100,6 +100,7 @@
 "3=": "⩶"  # THREE CONSECUTIVE EQUALS SIGNS
 "=|=": "≢"  # NOT IDENTICAL TO
 "-+": "∓"  # MINUS OR PLUS SIGN
+"+-": "±"  # PLUS OR PLUS SIGN
 "sq": "√"  # SQUARE ROOT
 "3sq": "∛"  # CUBE ROOT
 "4sq": "∜"  # FOURTH ROOT
