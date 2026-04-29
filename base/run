@@ -10,12 +10,15 @@ missing() {
         return 1
 }
 
-missing brew || {
+if missing brew ; then
+        missing rustup-init || rustup-init --default-toolchain stable --profile default -y
+else
         brew analytics off
         brew bundle install -v
-}
+        rustup toolchain link system "$(brew --prefix rust)"
+        rustup default system
+fi
 
-missing rustup-init || rustup-init --default-toolchain stable --profile default -y
 missing dart || {
         dart --disable-analytics
         dart pub global activate fvm
