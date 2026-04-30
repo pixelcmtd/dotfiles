@@ -86,6 +86,7 @@ brew "guile"
 brew "harfbuzz"
 brew "haxe"
 brew "hcloud"
+brew "helix", head: true
 brew "htop"
 brew "httping"
 brew "icdiff"

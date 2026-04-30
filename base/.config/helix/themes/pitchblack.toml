@@ -1,0 +1,10 @@
+inherits = "dark_plus"
+"ui.background" = {fg = "light_gray", bg = "background"}
+"ui.statusline"              = { fg = "white", bg = "widget" }
+"ui.statusline.inactive"     = { fg = "white", bg = "dark_gray2" }
+"ui.statusline.normal"       = { fg = "white", bg = "dark_green2" }
+"ui.statusline.insert"       = { fg = "white", bg = "blue" }
+"ui.statusline.select"       = { fg = "white", bg = "orange" }
+
+[palette]
+background = "#000000"

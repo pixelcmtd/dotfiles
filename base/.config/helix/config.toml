@@ -1,0 +1,53 @@
+theme = "pitchblack"
+
+[editor]
+line-number = "relative"
+bufferline = "multiple"
+color-modes = true
+default-line-ending = "lf"
+end-of-line-diagnostics = "hint"
+rainbow-brackets = true
+
+[editor.statusline]
+left = ["mode", "spacer", "version-control", "spacer", "spinner"]
+center = ["read-only-indicator", "file-name", "file-modification-indicator"]
+right = ["diagnostics", "file-encoding", "file-type", "spacer", "position-percentage", "spacer", "position"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-progress-messages = true
+#display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = false
+#ignore = false
+#git-ignore = false
+git-exclude = false
+
+[editor.auto-save]
+after-delay.enable = true
+after-delay.timeout = 1000
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+nbsp = "all"
+nnbsp = "all"
+newline = "none"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 5
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[keys.insert]
+C-a = "@<esc>I"
+C-e = "@<esc>A"
+#C-u = "@<esc>Xc"
