@@ -214,6 +214,7 @@ go "github.com/packwiz/packwiz"
 
 cargo "cargo-cache"
 cargo "cargo-edit"
+cargo "cargo-update"
 cargo "fd-find"
 cargo "just"
 cargo "just-lsp"
