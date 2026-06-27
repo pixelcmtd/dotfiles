@@ -48,6 +48,8 @@ max-wrap = 5
 cursor-line = "warning"
 
 [keys.insert]
-C-a = "@<esc>I"
-C-e = "@<esc>A"
+C-a = "insert_at_line_start"
+C-e = "insert_at_line_end"
+A-b = ["move_prev_word_start", "collapse_selection"]
+A-f = ["move_next_word_end", "move_char_right", "collapse_selection"]
 #C-u = "@<esc>Xc"
