@@ -5,4 +5,6 @@ dest="$HOME/src/pixelcmtd/dotfiles"
 [ -d "$dest" ] || git clone --recurse-submodules --shallow-submodules https://github.com/pixelcmtd/dotfiles.git "$dest"
 cd "$dest"
 
+[ -d /opt/homebrew -o -f /usr/local/bin/brew -o -d /home/linuxbrew/.linuxbrew ] || \
+        NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ./run "$@"

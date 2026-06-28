@@ -23,10 +23,6 @@ sudo systemsetup -setusingnetworktime On
 sudo systemsetup -setallowpowerbuttontosleepcomputer On
 sudo systemsetup -setremotelogin On
 
-# TODO: consider pkg
-[[ -d /opt/homebrew && "$(arch)" = arm64 ]] || \
-        [[ -f /usr/local/bin/brew && "$(arch)" = x86_64 ]] || \
-        curl -L https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 brew bundle install -v
 
 pip3 install --user pyyaml==5.3.1 gen-compose
