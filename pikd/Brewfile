@@ -1,0 +1,10 @@
+tap "ublue-os/tap"
+
+cask "ublue-os/tap/vscodium-linux"
+cask "ublue-os/tap/1password-gui-linux"
+
+flatpak "com.discordapp.Discord"
+flatpak "com.obsproject.Studio"
+flatpak "com.ticktick.TickTick"
+flatpak "org.ferdium.Ferdium"
+flatpak "org.signal.Signal"

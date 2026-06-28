@@ -1,0 +1,20 @@
+[user]
+	email = pixel+github@chrissx.de
+	name = pixel
+	#signingkey = 4D0B2AFA4202E727A9F07A207AB4E13AE464A14D
+[commit]
+	#gpgsign = true
+	gpgsign = false
+# [gpg]
+# 	helper = /usr/local/MacGPG2/bin/gpg
+# 	program = /usr/local/MacGPG2/bin/gpg
+[color]
+	ui = auto
+[init]
+	defaultBranch = daddy
+[alias]
+	hub = !gh
+[pull]
+	rebase = false
+[push]
+	autoSetupRemote = true

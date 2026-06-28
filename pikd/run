@@ -1,0 +1,6 @@
+#!/bin/sh
+set -uxe
+
+brew bundle -v
+
+cd .. && ./run base
