@@ -1,11 +1,11 @@
 # dotfiles
 
 A bunch of `dotfiles` and scripts for installing them with GNU Stow, as well as
-installing all of the actual packages.
+installing all the actual packages.
 
 <!-- toc GFM -->
 
-- [**c**hrissx **A**rch **a**nd **M**anjaro **O**S (`caamo`)](#chrissx-arch-and-manjaro-os-caamo)
+- [**Pi**xie's **K**DE **D**esktop (`pikd`)](#pixies-kde-desktop-pikd)
 - [**c**hrissx **M**edia **m**acOS **S**etup **S**cripts (`cmmss`)](#chrissx-media-macos-setup-scripts-cmmss)
   - [Other software (esp. audio plugins)](#other-software-esp-audio-plugins)
 - [`base`](#base)
@@ -13,16 +13,13 @@ installing all of the actual packages.
 
 <!-- toc -->
 
-## **c**hrissx **A**rch **a**nd **M**anjaro **O**S (`caamo`)
+## **Pi**xie's **K**DE **D**esktop (`pikd`)
 
-> [!WARNING]
-> CAAMO has been deprecated and will be removed/replaced soon.
-
-A very thin layer on top of your preferred Arch-based install. Mainly developed
-for and tested on Manjaro KDE.
+Installs a few desktop apps, developed and tested on Bazzite (DX) and Fedora
+Asahi:
 
 ```sh
-curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s caamo
+curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s pikd
 ```
 
 ## **c**hrissx **M**edia **m**acOS **S**etup **S**cripts (`cmmss`)
