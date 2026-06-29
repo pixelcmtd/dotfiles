@@ -208,6 +208,8 @@ brew "zls"
 brew "zsh"
 brew "zstd"
 
+cask "1password-cli"
+
 go "golang.org/x/tools/cmd/goimports"
 go "golang.org/x/tools/gopls"
 go "github.com/packwiz/packwiz"

@@ -8,7 +8,6 @@ brew "telnet"
 brew "xcodegen"
 
 cask "1password"
-cask "1password-cli"
 cask "affinity-designer"
 cask "affinity-photo"
 cask "affinity-publisher"
