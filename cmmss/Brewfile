@@ -1,5 +1,4 @@
 tap "1password/tap"
-tap "kde-mac/kde", "https://invent.kde.org/packaging/homebrew-kde.git"
 
 brew "dockutil"
 brew "ios-deploy"
@@ -18,16 +17,13 @@ cask "audacity"
 cask "balenaetcher"
 cask "blackhole-2ch"
 cask "blender"
-cask "brave-browser"
 cask "burp-suite"
-cask "chromium"
 cask "discord"
 cask "docker-desktop"
 cask "easyeda"
 cask "eclipse-java"
 cask "elgato-control-center"
 cask "ferdium"
-cask "firefox"
 cask "freecad"
 cask "gimp"
 cask "gpg-suite"
@@ -49,7 +45,6 @@ cask "ollama-app"
 cask "openscad@snapshot"
 cask "parallels@20"
 cask "prismlauncher"
-cask "qflipper"
 cask "raspberry-pi-imager"
 cask "softube-central"
 cask "spotify"
@@ -57,7 +52,6 @@ cask "steam"
 cask "surge-synthesizer"
 cask "surge-xt"
 cask "temurin"
-cask "thonny"
 cask "thunderbird"
 cask "tor-browser"
 cask "vivid-app"
@@ -68,7 +62,6 @@ cask "xquartz"
 
 mas "WeTransfer", id: 1114922065
 mas "GeoGebra CAS Calculator", id: 1489962804
-mas "GeoGebra Graphing Calculator", id: 1294018688
 mas "Dark Reader for Safari", id: 1438243180
 mas "ICE Buddy", id: 1595947689
 mas "iStatistica Pro", id: 1447778660
@@ -77,7 +70,6 @@ mas "Refined GitHub", id: 1519867270
 mas "Hush", id: 1544743900
 mas "Color Picker", id: 1545870783
 mas "1Password for Safari", id: 1569813296
-mas "Final Cut Pro", id: 424389933
 mas "Magnet", id: 441258766
 mas "Microsoft OneNote", id: 784801555
 mas "TickTick", id: 966085870
