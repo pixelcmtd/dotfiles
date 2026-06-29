@@ -1,0 +1,46 @@
+theme = "Builtin Dark"
+background = 000000
+foreground = c7c7c7
+
+font-family = Menlo
+font-family = "Ubuntu Mono"
+font-family = Unifont
+font-size = 20
+font-thicken = true
+font-thicken-strength = 0
+#adjust-cell-width = -5%
+bold-color = bright
+
+#cursor-style = bar
+cursor-style-blink = false
+
+mouse-scroll-multiplier = 1
+
+#maximize = true
+#title = " "
+window-vsync = true
+window-inherit-working-directory = true
+window-decoration = auto
+
+clipboard-read = ask
+clipboard-write = allow
+clipboard-paste-protection = true
+clipboard-paste-bracketed-safe = true
+right-click-action = "copy-or-paste"
+quit-after-last-window-closed = true
+undo-timeout = 10m
+
+shell-integration-features = no-cursor, sudo, title, ssh-env
+bell-features = system, attention, title
+
+macos-titlebar-style = tabs
+gtk-titlebar-style = tabs
+macos-auto-secure-input = true
+macos-secure-input-indication = true
+macos-icon = xray
+
+auto-update = download
+auto-update-channel = stable
+
+keybind = performable:super+alt+arrow_left=previous_tab
+keybind = performable:super+alt+arrow_right=next_tab
