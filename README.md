@@ -32,7 +32,7 @@ primarily on "Apple silicon" (ARM), currently macOS 15 Sequoia.
 > to run into issues, patching them should be pretty easy though.
 
 > [!NOTE]
-> CMMSS should work on macOS 26, but it is currently also untested.
+> CMMSS should work on macOS 26 and 27, but it is currently also untested.
 
 - Grant Terminal Full Disk Access (in the System Settings)
 - Install [XCode](https://apps.apple.com/de/app/xcode/id497799835) from the App
@@ -70,10 +70,8 @@ easily automatable. This may be seen as a long to-do list.
 Finishes up the install, specifically the following steps:
 
 - disable brew analytics
-- install [many homebrew formulae](base/Brewfile)
-- install rust stable from `rustup`
-- install [a few cargo packages](base/packages.cargo)
-- install `goimports`
+- install [many homebrew formulae, and cargo and go packages](base/Brewfile)
+- install rust stable from `rustup` if homebrew is not installed
 - disable dart analytics
 - install flutter stable from `fvm`
 - clone a big list of repos into `~/src`
@@ -82,5 +80,5 @@ Finishes up the install, specifically the following steps:
 
 Using `topgrade` to update all installed packages is recommended. To keep
 configurations in sync, `git pull && ./run base` (maybe `./run cmmss`,
-`./run caamo`, etc) should usually do the trick. In some cases, manual patches
+`./run pikd`, etc) should usually do the trick. In some cases, manual patches
 might be required after major changes.
