@@ -13,6 +13,7 @@ export TERM=xterm-256color
 export LS_COLORS=
 export PREFIX="$HOME/.local"
 
+export DO_NOT_TRACK=1
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_DOWNLOAD_CONCURRENCY=auto
