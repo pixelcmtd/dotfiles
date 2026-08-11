@@ -17,6 +17,8 @@ To disagree, press ctrl-c.'
 
 set -x
 
+osascript -e 'tell application "System Preferences" to quit'
+
 sudo systemsetup -setcomputersleep Never
 sudo systemsetup -setdisplaysleep 10
 sudo systemsetup -setusingnetworktime On
