@@ -1,10 +1,6 @@
 #!/bin/zsh
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
-export LC_MESSAGES=C
-export LC_MONETARY=C
-export LC_NUMERIC=C
-export LC_TIME=C
 export LC_ALL=
 export EDITOR=hx
 export VISUAL=$EDITOR
