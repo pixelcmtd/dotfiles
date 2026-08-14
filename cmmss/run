@@ -25,6 +25,8 @@ sudo systemsetup -setusingnetworktime On
 sudo systemsetup -setallowpowerbuttontosleepcomputer On
 sudo systemsetup -setremotelogin On
 
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Property of chrissx Media. Please message chrissx.lost+found@chrissx.de"
+
 # most defaults are well documented at:
 # https://github.com/kevinSuttle/macOS-Defaults/blob/master/.macos
 # https://mynixos.com/nix-darwin/options/system.defaults.NSGlobalDomain
@@ -51,6 +53,26 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write -g NSPreferredWebServices -dict NSWebServicesProviderWebSearch '{ NSDefaultDisplayName = DuckDuckGo; NSProviderIdentifier = "com.duckduckgo"; }'
 defaults write -g com.apple.mouse.linear -bool true
 defaults write -g com.apple.swipescrolldirection -bool false
+
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder DisableAllAnimations -bool true
+defaults write com.apple.finder FXConnectToLastURL -string "smb://rotmain.chrissx.de"
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://$HOME"
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
+
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock launchanim -bool false
 
 defaults write com.apple.Safari SearchProviderShortName -string DuckDuckGo
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
