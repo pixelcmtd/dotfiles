@@ -101,3 +101,45 @@ grep pinentry ~/.gnupg/gpg-agent.conf || \
         echo pinentry-program /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac >> ~/.gnupg/gpg-agent.conf
 
 cd .. && ./run base
+
+dockutil --remove all --no-restart
+set +x
+for app in \
+    "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" \
+    "/Applications/Helium.app" \
+    "/Applications/Brave Browser.app" \
+    "/System/Applications/App Store.app" \
+    "/System/Applications/Photos.app" \
+    "/Applications/iTerm.app" \
+    "/Applications/Ghostty.app" \
+    "/System/Applications/System Settings.app" \
+    "/Applications/VSCodium.app" \
+    "/System/Applications/FaceTime.app" \
+    "/Applications/Numbers.app" \
+    "/Applications/Keynote.app" \
+    "/System/Applications/Notes.app" \
+    "/Applications/Microsoft OneNote.app" \
+    "/Applications/TickTick.app" \
+    "/System/Applications/Music.app" \
+    "/Applications/Thunderbird.app" \
+    "/System/Applications/Mail.app" \
+    "/Applications/FL Studio 2024.app" \
+    "/Applications/DaVinci Resolve/DaVinci Resolve.app" \
+    "/Applications/LosslessCut.app" \
+    "/Applications/OBS.app" \
+    "/Applications/Affinity Designer 2.app" \
+    "/System/Applications/Messages.app" \
+    "/Applications/Ferdium.app" \
+    "/Applications/Signal.app" \
+    "/Applications/EasyEDA-Pro.app" \
+    "/Applications/Ollama.app" \
+    "/Applications/T3 Code (Alpha).app"
+do
+    if [ -d "$app" ] ; then
+        dockutil --add "$app" --no-restart
+    else
+        echo "APP MISSING: $app"
+    fi
+done
+set -x
+killall Dock
