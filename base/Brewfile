@@ -5,7 +5,7 @@ brew "autoconf"
 brew "automake"
 brew "bat"
 brew "bear"
-brew "binaryen"
+brew "binaryen", link: false
 brew "binutils"
 brew "binwalk"
 brew "boost"
