@@ -11,9 +11,9 @@
 	ui = auto
 [init]
 	defaultBranch = daddy
-[alias]
-	hub = !gh
 [pull]
 	rebase = false
 [push]
 	autoSetupRemote = true
+[rerere]
+	enabled = true
