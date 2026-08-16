@@ -91,6 +91,8 @@ defaults write com.apple.Music dontWarnAboutRequiringExternalHardware -bool true
 defaults write com.apple.Music automaticallyDownloadArtwork -bool true
 defaults write com.apple.Music encoderName -string "Lossless Encoder"
 
+chflags nohidden "$HOME/Library"
+
 brew bundle install -v
 
 pip3 install --user pyyaml==5.3.1 gen-compose
