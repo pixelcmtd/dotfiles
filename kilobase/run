@@ -1,0 +1,19 @@
+#!/bin/sh
+set -uxe
+
+brew analytics off
+brew bundle install -v
+
+cd .. && ./run base
+
+gh api /user/memberships/orgs --jq 'map(.organization.login) + ["'"$(gh api /user --jq .login)"'", "dart-lang"] | join("\n")' | \
+    grep -Ev 'EpicGames|tldr-pages' | \
+    xe -j0 -- gh repo list -L 1000 --no-archived --json owner,name --jq 'map(.owner.login + "/" + .name) | map([., .]) | flatten + ["cplusplus/draft","c++std", "carp-lang/Carp","Carp", "https://git.ffmpeg.org/ffmpeg.git","ffmpeg"] | join("\n")' | \
+    xe -N2 sh -c '[ -d ~/src/$2 ] || echo "gh repo clone $1 ~/src/$2 -- --recurse-submodules -qv"' -s | \
+    sort | uniq | \
+    xe -vj10 sh -c
+
+gh api /user/memberships/orgs --jq 'map(.organization.login) + ["'"$(gh api /user --jq .login)"'"] | join("\n")' | \
+    xe -j0 -- bash -c 'shopt -s nullglob ; for x in $HOME/src/$1/* ; do echo $x ; done' -s | \
+    xe -j0 -s 'grep $1 $HOME/.local/share/helix/trusted_workspaces >/dev/null || echo $1' | \
+    tee -a "$HOME/.local/share/helix/trusted_workspaces"

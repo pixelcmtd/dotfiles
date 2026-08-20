@@ -102,7 +102,7 @@ gen-compose Compose.yaml > ~/Library/KeyBindings/DefaultKeyBinding.dict
 grep pinentry ~/.gnupg/gpg-agent.conf || \
         echo pinentry-program /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac >> ~/.gnupg/gpg-agent.conf
 
-cd .. && ./run base
+cd .. && ./run kilobase
 
 dockutil --remove all --no-restart
 set +x

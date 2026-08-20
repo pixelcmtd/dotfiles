@@ -3,4 +3,4 @@ set -uxe
 
 brew bundle -v
 
-cd .. && ./run base
+cd .. && ./run kilobase
