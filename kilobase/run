@@ -1,10 +1,10 @@
 #!/bin/sh
 set -uxe
 
-cd .. && ./run base
+cd .. && ./run base && cd kilobase
 
 brew analytics off
-brew bundle install -v
+brew bundle install -v --jobs 1
 
 gh api /user/memberships/orgs --jq 'map(.organization.login) + ["'"$(gh api /user --jq .login)"'", "dart-lang"] | join("\n")' | \
     grep -Ev 'EpicGames|tldr-pages' | \
