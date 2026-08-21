@@ -1,0 +1,12 @@
+[misc]
+disable = ["vim", "pnpm", "yarn", "pipx", "github_cli_extensions", "fossil", "uv", "haxelib", "pyenv", "tlmgr"]
+cleanup = true
+
+[git]
+max_concurrency = 10
+pull_predefined = false
+repos = ["~/src/*", "~/src/*/*"]
+
+[commands]
+"dotfiles" = "cd ~/src/pixelcmtd/dotfiles/kilobase && ./run"
+"tldrgal" = "tldrgal update"

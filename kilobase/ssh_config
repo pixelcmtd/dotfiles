@@ -2,6 +2,10 @@ AddKeysToAgent ask
 NoHostAuthenticationForLocalhost yes
 VerifyHostKeyDNS ask
 
+Host ppc
+	Hostname ppc.chrissx.de
+	User pixel
+
 Host ruby
 	Hostname ruby.chrissx.de
 	User root
