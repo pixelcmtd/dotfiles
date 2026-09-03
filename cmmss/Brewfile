@@ -1,5 +1,3 @@
-tap "1password/tap"
-
 brew "dockutil"
 brew "ios-deploy"
 brew "molten-vk"
