@@ -6,6 +6,11 @@ Host ppc
 	Hostname ppc.chrissx.de
 	User pixel
 
+Host slop
+	Hostname ppc.chrissx.de
+	User root
+	Port 3774
+
 Host ruby
 	Hostname ruby.chrissx.de
 	User root
