@@ -71,9 +71,14 @@ Finishes up the install, specifically the following steps:
 
 - disable brew analytics
 - install [many homebrew formulae, and cargo and go packages](base/Brewfile)
-- install rust stable from `rustup` if homebrew is not installed
 - disable dart analytics
 - install flutter stable from `fvm`
+
+### `kilobase`
+
+The part of `base` that you wouldn't want for a minimal/devcontainer/… install:
+
+- install [a few more packages](kilobase/Brewfile)
 - clone a big list of repos into `~/src`
 
 ## Updating
