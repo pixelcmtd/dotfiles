@@ -9,7 +9,6 @@ Host ppc
 Host slop
 	Hostname 10.77.0.2
 	User root
-	Port 3774
 
 Host ruby
 	Hostname ruby.chrissx.de
