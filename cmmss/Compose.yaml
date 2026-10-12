@@ -80,8 +80,6 @@
 "!<>": "≸"  # NEITHER LESS-THAN NOR GREATER-THAN
 "<<": "≪"  # MUCH LESS-THAN
 ">>": "≫"  # MUCH GREATER-THAN
-"<<<": "⋘"  # VERY MUCH LESS-THAN
-">>>": "⋙"  # VERY MUCH GREATER-THAN
 "in": "∈"  # ELEMENT OF
 "!in": "∉"  # NOT AN ELEMENT OF
 "/in": "∉"
@@ -124,9 +122,10 @@
 "/{)": "⊅"  # NOT A SUPERSET OF
 "{)": "⊃"  # SUPERSET OF
 "{=)": "⊇"  # SUPERSET OF OR EQUAL TO
+"TE": "∃"  # THERE EXISTS
 "EE": "∃"  # THERE EXISTS
 "/EE": "∄"  # THERE DOES NOT EXIST
-"AA": "∀"  # FOR ALL
+"FA": "∀"  # FOR ALL
 "QED": "∎"  # END OF PROOF
 "Inf": "∞"  # INFINITY
 "aleph": "ℵ"  # ALEF SYMBOL
@@ -152,19 +151,13 @@
 "int": "∫"  # INTEGRAL
 "uint": "⨛"  # UPPER INTEGRAL
 "lint": "⨜"  # LOWER INTEGRAL
-"iint": "∬"  # DOUBLE INTEGRAL
-"iiint": "∭"  # TRIPLE INTEGRAL
-"iiiint": "⨌"  # QUADRUPLE INTEGRAL
 "oint": "∮"  # CONTOUR INTEGRAL
 "pint": "⨕"  # INTEGRAL AROUND A POINT OPERATOR
 "cPint": "⨓"  # LINE INTEGRATION WITH SEMICIRCULAR PATH AROUND POLE
 "oiint": "∯"  # SURFACE INTEGRAL
 "oiiint": "∰"  # VOLUME INTEGRAL
-"gint": "⨘"  # GEOMETRIC INTEGRAL
-"sint": "⨋"  # SUM/INTEGRAL
 "del": "∇"  # NABLA
 "part": "∂"  # PARTIAL DIFFERENTIAL
-"*..d": "∂"  # PARTIAL DIFFERENTIAL
 "Re": "ℜ"  # BLACK-LETTER CAPITAL R (Real Part)
 "Im": "ℑ"  # BLACK-LETTER CAPTIAL I (Imaginary Part)
 "exp": "ℯ"  # SCRIPT SMALL E
@@ -353,8 +346,6 @@
 "@])": "❳"  # LIGHT RIGHT TORTOISE SHELL BRACKET ORNAMENT
 "@{": "❴"  # MEDIUM LEFT CURLY BRACKET ORNAMENT
 "@}": "❵"  # MEDIUM RIGHT CURLY BRACKET ORNAMENT
-"@": "️"  # Emoji selector
-"!": "︎"  # Text selector
 "[1]": "⚀"  # DIE FACE-1
 "[2]": "⚁"  # DIE FACE-2
 "[3]": "⚂"  # DIE FACE-3
@@ -403,7 +394,6 @@
 "rad": "☢"  # RADIOACTIVE SIGN
 "bh": "☣"  # BIOHAZARD SIGN
 "biohaz": "☣"  # BIOHAZARD SIGN
-"AAAAA": "⛤"  # PENTAGRAM (pentalpha, get it?)
 "plane": "✈"  # AIRPLANE
 "mail": "✉"  # ENVELOPE
 "whlch": "♿"  # WHEELCHAIR SYMBOL
@@ -412,11 +402,9 @@
 "1med": "⚕"  # STAFF OF AESCULAPIUS
 "fem": "♀"  # FEMALE SIGN
 "masc": "♂"  # MALE SIGN
-"gay": "⚣"  # DOUBLED MALE SIGN
 "lesbian": "⚢"  # DOUBLED FEMALE SIGN
 "hetero": "⚤"  # INTERLOCKED FEMALE AND MALE SIGN
 "trans": "⚥"  # MALE AND FEMALE SIGN
-"genderq": "⚧"  # MALE WITH STROKE AND MALE AND FEMALE SIGN
 "pride": "🏳️‍🌈" # GENERAL PRIDE (RAINBOW) FLAG
 "tpride": "🏳️‍⚧️" # TRANSGENDER PRIDE FLAG
 "OX": "☠"  # SKULL AND CROSSBONES
@@ -488,10 +476,6 @@
 "O)": "Ɔ"  # LATIN CAPITAL LETTER OPEN O
 "AW": "Ɔ"  # LATIN CAPITAL LETTER OPEN O
 "eh": "ɛ"  # LATIN SMALL LETTER OPEN E
-"<ah": "ɒ"  # LATIN SMALL LETTER TURNED ALPHA
-"<eh": "ɜ"  # LATIN SMALL LETTER REVERSED OPEN E
-"<er": "ɝ"  # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
-"gy": "ɟ"  # LATIN SMALL LETTER DOTLESS J WITH STROKE
 "|'": "ˈ"  # MODIFIER LETTER VERTICAL LINE
 "|,": "ˌ"  # MODIFIER LETTER LOW VERTICAL LINE
 "|_": "̩"  # COMBINING VERTICAL LINE BELOW
@@ -502,15 +486,12 @@
 "!_.": "ꞌ"  # LATIN SMALL LETTER SALTILLO
 "WW": "ʬ"  # LATIN LETTER BILABIAL PERCUSSIVE
 ":+": "ː"  # MODIFIER LETTER TRIANGULAR COLON
-"gh": "ɣ"  # LATIN SMALL LETTER GAMMA
-"ogh": "ɤ"  # LATIN SMALL LETTER RAMS HORN
 "ain": "ᴥ"  # LATIN LETTER AIN
 "No": "№"  # NUMERO SIGN
 "Rx": "℞"  # PRESCRIPTION TAKE
 "Per": "⅌"  # PER SIGN
 "oz.": "℥"  # OUNCE SIGN
 "scr.": "℈"  # SCRUPLE
-"*...": "๛"  # THAI CHARACTER KHOMUT (end of chapter)
 "#b": "♭"  # MUSIC FLAT SIGN
 "#f": "♮"  # MUSIC NATURAL SIGN
 "#=": "♮"  # MUSIC NATURAL SIGN
@@ -617,7 +598,6 @@
 "AOK": "👌"  # OK HAND SIGN
 "thmup": "👍"  # THUMBS UP SIGN
 "thmdn": "👎"  # THUMBS DOWN SIGN
-"kiss": "💋"  # KISS MARK
 "DNE": "⛔"  # NO ENTRY
 "B|": "₿"  # BITCOIN SIGN
 "apple": "" # APPLE LOGO
