@@ -4,12 +4,10 @@ VerifyHostKeyDNS ask
 
 Host ppc
 	Hostname ppc.chrissx.de
-	RemoteCommand zsh -l
 	User pixel
 
 Host slop
-	Hostname ppc.chrissx.de
-	RemoteCommand zsh -l
+	Hostname 10.77.0.2
 	User root
 	Port 3774
 
