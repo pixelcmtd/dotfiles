@@ -9,7 +9,6 @@
 "&@": "⅋"  # TURNED AMPERSAND
 "&7": "⁊"  # TIRONIAN SIGN ET
 "\\ ": "␣"  # OPEN BOX
-"-- ": "– "  # EN DASH (followed by space)
 "-~-": "―"  # HORIZONTAL BAR
 "-2M": "⸺"  # TWO-EM DASH
 "-3M": "⸻"  # THREE-EM DASH
@@ -148,7 +147,7 @@
 "-a": "ª"  # FEMININE ORDINAL INDICATOR
 "-o": "º"  # MASCULINE ORDINAL INDICATOR
 "sum": "∑"  # N-ARY SUMMATION
-"int": "∫"  # INTEGRAL
+"Int": "∫"  # INTEGRAL
 "uint": "⨛"  # UPPER INTEGRAL
 "lint": "⨜"  # LOWER INTEGRAL
 "oint": "∮"  # CONTOUR INTEGRAL
@@ -410,15 +409,6 @@
 "OX": "☠"  # SKULL AND CROSSBONES
 "death": "☠"  # SKULL AND CROSSBONES
 "kbd": "⌨"  # KEYBOARD
-"**": "★"  # BLACK STAR
-"*0": "☆"  # WHITE STAR
-"*-": "✪"  # CIRCLED WHITE STAR
-"2*": "⁑"  # TWO ASTERISKS ALIGNED VERTICALLY
-"*4": "✢"  # FOUR TEARDROP-SPOKED ASTERISK
-"*6": "✡"  # STAR OF DAVID
-"*#": "✯"  # PINWHEEL STAR
-"*!": "✱"  # HEAVY ASTERISK
-"<X>": "❖"  # BLACK DIAMOND MINUS WHITE X
 "@#": "⌘"  # PLACE OF INTEREST SIGN (Cmd/Command key)
 "cmd": "⌘"
 "opt": "⌥" # OPTION KEY
@@ -568,19 +558,6 @@
 "degF": "℉"  # DEGREE FAHRENHEIT
 "degf": "℉"  # DEGREE FAHRENHEIT
 "dgf": "℉"  # DEGREE FAHRENHEIT
-"aries": "♈"  # ARIES
-"taurus": "♉"  # TAURUS
-"gemini": "♊"  # GEMINI
-"cancer": "♋"  # CANCER
-"leo": "♌"  # LEO
-"virgo": "♍"  # VIRGO
-"libra": "♎"  # LIBRA
-"scorp": "♏"  # SCORPIUS
-"sagit": "♐"  # SAGITTARIUS
-"capric": "♑"  # CAPRICORN
-"aquar": "♒"  # AQUARIUS
-"pisces": "♓"  # PISCES
-"ophiuc": "⛎"  # OPHIUCHUS
 "idea": "💡"  # ELECTRIC LIGHT BULB
 "anger": "💢"  # ANGER SYMBOL
 "bomb": "💣"  # BOMB
