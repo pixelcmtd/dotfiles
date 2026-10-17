@@ -6,6 +6,9 @@ cd .. && ./run base && cd kilobase
 brew analytics off
 brew bundle install -v --jobs 1
 
+dart pub global activate fvm
+dart pub global run fvm:main install stable
+
 gh api /user/memberships/orgs --jq 'map(.organization.login) + ["'"$(gh api /user --jq .login)"'", "CMJanina"] | join("\n")' | \
     grep -Ev 'EpicGames|tldr-pages' | \
     xe -j0 -- gh repo list -L 1000 --no-archived --json owner,name --jq 'map(.owner.login + "/" + .name) | map([., .]) | flatten + ["https://git.ffmpeg.org/ffmpeg.git","ffmpeg"] | join("\n")' | \

@@ -1,4 +1,5 @@
 brew "bear"
+brew "binaryen", link: false
 brew "btpd"
 brew "cmatrix"
 brew "dfu-programmer"
@@ -6,6 +7,8 @@ brew "extra-cmake-modules"
 brew "fetchmail"
 brew "ffmpeg-full", link: true
 brew "ghidra"
+brew "gnu-prolog"
+brew "maven"
 brew "minicom"
 brew "neovim"
 brew "pinentry"
@@ -28,6 +31,7 @@ cask "1password-cli"
 
 cargo "cargo-update"
 cargo "openscad-lsp"
+cargo "wasm-pack"
 
 vscode "ankitpati.vscodium-amoled"
 vscode "antyos.openscad"

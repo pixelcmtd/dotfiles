@@ -1,7 +1,6 @@
 #!/bin/sh
 set -uxe
 
-brew analytics off
 brew bundle install -v
 
 if command -v rustup >/dev/null ; then
@@ -10,5 +9,3 @@ if command -v rustup >/dev/null ; then
 fi
 
 dart --disable-analytics
-dart pub global activate fvm
-dart pub global run fvm:main install stable
