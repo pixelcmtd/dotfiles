@@ -116,6 +116,7 @@ for app in \
     "/Applications/Ghostty.app" \
     "/System/Applications/System Settings.app" \
     "/Applications/VSCodium.app" \
+    "/Applications/T3 Code (Beta).app" \
     "/System/Applications/FaceTime.app" \
     "/Applications/Numbers.app" \
     "/Applications/Keynote.app" \
@@ -125,7 +126,7 @@ for app in \
     "/System/Applications/Music.app" \
     "/Applications/Thunderbird.app" \
     "/System/Applications/Mail.app" \
-    "/Applications/FL Studio 2024.app" \
+    "/Applications/FL Studio*.app" \
     "/Applications/DaVinci Resolve/DaVinci Resolve.app" \
     "/Applications/LosslessCut.app" \
     "/Applications/OBS.app" \
@@ -133,9 +134,7 @@ for app in \
     "/System/Applications/Messages.app" \
     "/Applications/Ferdium.app" \
     "/Applications/Signal.app" \
-    "/Applications/EasyEDA-Pro.app" \
-    "/Applications/Ollama.app" \
-    "/Applications/T3 Code (Alpha).app"
+    "/Applications/EasyEDA-Pro.app"
 do
     if [ -d "$app" ] ; then
         dockutil --add "$app" --no-restart
