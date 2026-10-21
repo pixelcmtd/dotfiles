@@ -1,6 +1,5 @@
 #!/bin/zsh
 source ~/.env
-export ASTRO_TELEMETRY_DISABLED=1
 
 autoload -U compaudit compinit
 compinit -u -C -d "$HOME/.cache/zcompdump-$ZSH_VERSION"
@@ -160,7 +159,6 @@ alias b="bat -P --style=plain"
 alias m='make -j$(nproc)'
 alias mi='make -j$(nproc) install'
 alias mt='make -j$(nproc) test'
-alias mo='make -j$(nproc) && `type xdg-open >/dev/null && echo xdg-open || echo open`'
 alias j='just -v'
 
 alias o="`type xdg-open >/dev/null && echo xdg-open || echo open`"
@@ -177,10 +175,6 @@ alias gr="grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.
 
 alias zshtheme="$VISUAL $HOME/.zshtheme"
 alias zshrc="$VISUAL $HOME/.zshrc"
-alias vimrc="$VISUAL $HOME/.vimrc"
-
-alias help=man
-alias neofetch=hyfetch
 
 alias -g H='| head'
 alias -g T='| tail'
@@ -213,7 +207,6 @@ alias gck='git checkout'
 alias gsd='(git -c color.status=always status && echo -e "\n" && git diff --color) | less -R'
 
 alias diff='git diff --no-index'
-alias rr='curl -sL http://bit.ly/10hA8iC | bash'
 alias tmp='pushd ; cd $(mktemp -d)'
 alias pwn='docker run --rm -v$PWD:/pwd -it chrissx/pwn:latest'
 
