@@ -25,14 +25,15 @@ curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s pikd
 ## **c**hrissx **M**edia **m**acOS **S**etup **S**cripts (`cmmss`)
 
 A set of scripts for easily installing a lot of packages and configuration,
-primarily on "Apple silicon" (ARM), currently macOS 15 Sequoia.
+primarily on "Apple silicon" (ARM), currently macOS 15 Sequoia and macOS 27
+Golden Gate.
 
 > [!WARNING]
 > Older macOS versions, as well as Intel-based versions are unsupported. Expect
 > to run into issues, patching them should be pretty easy though.
 
 > [!NOTE]
-> CMMSS should work on macOS 26 and 27, but it is currently also untested.
+> I am currently testing CMMSS on macOS 27.
 
 - Grant Terminal Full Disk Access (in the System Settings)
 - Install [XCode](https://apps.apple.com/de/app/xcode/id497799835) from the App
