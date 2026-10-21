@@ -221,6 +221,6 @@ ght() (git tag "$@" && git push origin --tags)
 glcp() (git pull && git commit "$@" && git push)
 ghcl() (git clone --recurse-submodules -v https://github.com/$1.git $2 $3 $4)
 
-source ~/src/pixelcmtd/dotfiles/base/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+eval "$(zsh-patina activate)"
 
 ! type pfetch >/dev/null || pfetch

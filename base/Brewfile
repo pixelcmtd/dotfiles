@@ -116,6 +116,7 @@ brew "z3"
 brew "zig"
 brew "zls"
 brew "zsh"
+brew "zsh-patina"
 
 go "golang.org/x/tools/cmd/goimports"
 go "golang.org/x/tools/gopls"

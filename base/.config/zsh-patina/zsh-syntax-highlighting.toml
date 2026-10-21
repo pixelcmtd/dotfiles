@@ -1,0 +1,11 @@
+"variable.function" = "green"
+"dynamic.callable" = "green"
+"dynamic.callable.missing" = { foreground = "red", bold = true }
+"dynamic.path" = { underline = true }
+
+"string.quoted" = "yellow"
+"keyword.control" = "yellow"
+"keyword.operator.assignment.redirection" = "yellow"
+"constant.character.escape" = "cyan"
+"meta.group.expansion.history" = "blue"
+"comment" = { foreground = "black", bold = true }
