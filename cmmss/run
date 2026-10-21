@@ -117,6 +117,7 @@ for app in \
     "/System/Applications/System Settings.app" \
     "/Applications/VSCodium.app" \
     "/Applications/T3 Code (Beta).app" \
+    "/Applications/ChatGPT.app" \
     "/System/Applications/FaceTime.app" \
     "/Applications/Numbers.app" \
     "/Applications/Keynote.app" \
@@ -134,6 +135,7 @@ for app in \
     "/System/Applications/Messages.app" \
     "/Applications/Ferdium.app" \
     "/Applications/Signal.app" \
+    "/System/Applications/Calendar.app" \
     "/Applications/EasyEDA-Pro.app"
 do
     if [ -d "$app" ] ; then
