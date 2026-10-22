@@ -122,7 +122,6 @@ go "golang.org/x/tools/cmd/goimports"
 go "golang.org/x/tools/gopls"
 go "github.com/packwiz/packwiz"
 
-cargo "cargo-cache"
 cargo "cargo-edit"
 cargo "fd-find"
 cargo "just"
