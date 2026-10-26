@@ -93,6 +93,18 @@ defaults write com.apple.Music encoderName -string "Lossless Encoder"
 
 chflags nohidden "$HOME/Library"
 
+sudo tmutil addexclusion -p "$HOME/.cache" "$HOME/.npm"
+sudo tmutil addexclusion -p "$HOME/Library/Application Support/CrossOver"
+sudo tmutil addexclusion -p "$HOME/Library/Application Support/Ferdium"
+sudo tmutil addexclusion -p "$HOME/Library/Application Support/Steam"
+sudo tmutil addexclusion -p "$HOME/Library/Application Support/VSCodium"
+sudo tmutil addexclusion -p "$HOME/Library/Application Support/discord"
+sudo tmutil addexclusion -p "$HOME/Library/Arduino15"
+sudo tmutil addexclusion -p "$HOME/Library/Caches"
+sudo tmutil addexclusion -p "$HOME/Library/Developer"
+sudo tmutil addexclusion -p "$HOME/Music/Music" "$HOME/Parallels" "$HOME/Pictures/Photos Library.photoslibrary"
+sudo tmutil addexclusion -p "/Applications" "/Library" "/Users/Shared"
+
 brew bundle install -v
 
 (
