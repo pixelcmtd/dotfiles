@@ -95,9 +95,21 @@ chflags nohidden "$HOME/Library"
 
 brew bundle install -v
 
-pip3 install --user pyyaml==5.3.1 gen-compose
+(
+    set -o pipefail
+    cd "$(mktemp -d)"
+
+    poco_asset="poco-macos-$(uname -m).tar.gz"
+    curl -fLO https://github.com/pixelcmtd/poco/releases/latest/download/$poco_asset
+    curl -fLO https://github.com/pixelcmtd/poco/releases/latest/download/SHA256SUMS
+    grep "  $poco_asset\$" SHA256SUMS | shasum -a 256 --check -
+    tar -xzf "$poco_asset" poco
+    mkdir -p "$HOME/.local/bin"
+    install -m 755 poco "$HOME/.local/bin/poco"
+)
+
 mkdir -p ~/Library/KeyBindings
-gen-compose Compose.yaml > ~/Library/KeyBindings/DefaultKeyBinding.dict
+poco -t Cocoa Compose.yaml > ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 grep pinentry ~/.gnupg/gpg-agent.conf || \
         echo pinentry-program /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac >> ~/.gnupg/gpg-agent.conf
