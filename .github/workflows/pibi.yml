@@ -73,9 +73,7 @@ jobs:
 
       - name: Install cosign
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/daddy'
-        uses: sigstore/cosign-installer@v4.1.2
-        with:
-          cosign-release: v3.1.2
+        uses: sigstore/cosign-installer@main
 
       - name: Sign image
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/daddy'
