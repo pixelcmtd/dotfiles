@@ -4,6 +4,9 @@ Based on `ghcr.io/ublue-os/bazzite:testing`, with DX development/ROCm tools,
 Linux VMs and GPU passthrough, Ghostty, Helium and Podman. KDE desktop, without
 Gaming Mode defaults.
 
+AMDGPU uses `runpm=0` to keep the GPU awake when the KVM switches away. This can
+increase idle power use.
+
 ## Build and publish
 
 From `pibi/`:
