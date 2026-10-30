@@ -28,6 +28,7 @@ brew "yarn"
 brew "yt-dlp"
 
 cask "1password-cli"
+cask "losslesscut"
 
 cargo "cargo-update"
 cargo "openscad-lsp"
