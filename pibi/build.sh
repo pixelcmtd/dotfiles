@@ -43,7 +43,14 @@ dnf5 --setopt=install_weak_deps=False install -y \
 
 dnf5 -y copr enable scottames/ghostty
 dnf5 -y copr enable imput/helium
-dnf5 install -y ghostty helium-bin
+
+# Keep Qt 5 companions at the base image's locked Plasma versions.
+qt5_packages=()
+for package in plasma-breeze plasma-integration plasma-oxygen; do
+    read -r version release arch signature <<< "$(rpm -q --qf '%{VERSION} %{RELEASE} %{ARCH} %{RSAHEADER:pgpsig}' "$package")"
+    qt5_packages+=("https://kojipkgs.fedoraproject.org/packages/$package/$version/$release/data/signed/${signature: -8}/$arch/$package-qt5-$version-$release.$arch.rpm")
+done
+dnf5 --setopt=localpkg_gpgcheck=True install -y "${qt5_packages[@]}" ghostty helium-bin
 dnf5 -y copr disable scottames/ghostty
 dnf5 -y copr disable imput/helium
 
