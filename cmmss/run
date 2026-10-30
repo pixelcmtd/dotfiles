@@ -144,14 +144,16 @@ for app in \
     "/Applications/ChatGPT.app" \
     "/System/Applications/FaceTime.app" \
     "/Applications/Numbers.app" \
+    "/Applications/Numbers Creator Studio.app" \
     "/Applications/Keynote.app" \
+    "/Applications/Keynote Creator Studio.app" \
     "/System/Applications/Notes.app" \
     "/Applications/Microsoft OneNote.app" \
     "/Applications/TickTick.app" \
     "/System/Applications/Music.app" \
     "/Applications/Thunderbird.app" \
     "/System/Applications/Mail.app" \
-    "/Applications/FL Studio*.app" \
+    "/Applications/FL Studio"*.app(N) \
     "/Applications/DaVinci Resolve/DaVinci Resolve.app" \
     "/Applications/LosslessCut.app" \
     "/Applications/OBS.app" \
