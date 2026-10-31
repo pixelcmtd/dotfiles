@@ -15,5 +15,5 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 
 COPY LICENSE /usr/share/licenses/pibi/LICENSE
 
-# The builder mounts its resolver below /run/systemd.
-RUN find /boot /run -mindepth 1 ! -path '/run/systemd*' -delete && bootc container lint
+# Preserve the builder's resolver and container metadata mounts under /run.
+RUN find /boot /run -mindepth 1 ! -path '/run/systemd*' ! -path '/run/.containerenv' -delete && bootc container lint
